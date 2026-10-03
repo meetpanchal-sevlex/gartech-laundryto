@@ -1,0 +1,55 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Garment Finishing Equipment | Industrial Ironing & Pressing | Gartech Global" description="Professional garment finishing equipment from Gartech Global. Industrial ironing and pressing machinery for commercial laundries, dry cleaners and hotels.">
+
+  <section class="w-full px-8 md:px-12 lg:px-16 xl:px-20 mx-auto py-16 md:py-24">
+    <div class="max-w-3xl mb-14">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Garment Finishing Equipment</h1>
+      <p class="text-xl text-neutral-400 font-medium mb-4">The Final Stage of Professional Laundry Processing</p>
+      <p class="text-lg text-neutral-500 leading-relaxed">A professional laundry does not end with washing and drying. Garment finishing determines the final appearance of the product delivered to the customer. Gartech Global provides machinery solutions for professional garment finishing, including steam pressing and ironing applications.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+      <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow p-8 md:p-10">
+        <h2 class="text-2xl font-bold tracking-tight mb-5">Why Garment Finishing Matters</h2>
+        <p class="text-neutral-500 mb-6 leading-relaxed">Professional finishing helps businesses deliver a better end product to their customers — improving both quality perception and business reputation.</p>
+        <div class="space-y-3">
+          {[
+            "Improved garment presentation",
+            "Better customer experience",
+            "Consistent finishing quality",
+            "Higher processing productivity",
+            "Professional appearance of output",
+          ].map(item => (
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-zinc-950 flex items-center justify-center shrink-0">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="text-sm font-medium text-neutral-700">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="bg-zinc-950 text-white rounded-3xl p-8 md:p-10 flex flex-col justify-between">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight mb-4">Steam Press Machines</h2>
+          <p class="text-neutral-300 leading-relaxed mb-6">Our range of professional steam pressing equipment covers the needs of commercial laundries, dry cleaners, hotels and institutional operations.</p>
+        </div>
+        <a href="/steam-press-machines" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">
+          View Steam Press Machines
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-neutral-50 border border-neutral-200/80 rounded-3xl p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div>
+        <h2 class="text-xl font-bold tracking-tight mb-2">Planning a complete laundry operation?</h2>
+        <p class="text-neutral-500">We help you select the right finishing equipment alongside your washing and drying machines.</p>
+      </div>
+      <a href="/contact" class="shrink-0 inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-zinc-950 rounded-full hover:bg-zinc-800 transition-all hover:-translate-y-0.5 duration-150">Request a Quote</a>
+    </div>
+  </section>
+
+</Layout>

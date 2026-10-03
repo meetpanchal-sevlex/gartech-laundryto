@@ -1,0 +1,38 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Why Choose Gartech Global | Laundry Machinery Partner" description="Why businesses choose Gartech Global for their commercial and industrial laundry machinery needs. Wide capacity range, multiple categories, application-based approach and complete support.">
+
+  <section class="w-full px-8 md:px-12 lg:px-16 xl:px-20 mx-auto py-16 md:py-24">
+    <div class="max-w-3xl mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Why Choose Gartech Global?</h1>
+      <p class="text-lg text-neutral-500 leading-relaxed">A Machinery Partner for Professional Laundry Businesses</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      {[
+        { title: "Wide Capacity Range", desc: "From 10 KG compact commercial equipment to 215 KG heavy industrial machinery. Whatever the scale of your operation, we have the right machine.", badge: "Range" },
+        { title: "Multiple Machinery Categories", desc: "Washing, drying, stackers, steam pressing and industrial laundry equipment — all sourced and supported by one specialist supplier.", badge: "Range" },
+        { title: "Application-Based Approach", desc: "We don't just list machines. We recommend solutions based on your actual operation — daily volume, textile type, workflow and business type.", badge: "Approach" },
+        { title: "Commercial & Industrial Expertise", desc: "Solutions for businesses ranging from small commercial laundries and boutique dry cleaners to large institutional and industrial facilities.", badge: "Expertise" },
+        { title: "Complete Laundry Thinking", desc: "We consider how different machines work together as a complete laundry workflow — not just individual equipment in isolation.", badge: "Approach" },
+        { title: "After-Sales Support", desc: "Installation, commissioning, operator guidance, preventive maintenance guidance, technical assistance and spare parts assistance.", badge: "Support" },
+      ].map(item => (
+        <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover hover:-translate-y-0.5 transition-all duration-300 p-8">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-5">
+            {item.badge}
+          </div>
+          <h2 class="text-xl font-bold tracking-tight mb-3">{item.title}</h2>
+          <p class="text-neutral-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-zinc-950 text-white rounded-3xl p-10 md:p-14 text-center">
+      <h2 class="text-2xl font-bold tracking-tight mb-3">Ready to work with Gartech Global?</h2>
+      <p class="text-neutral-400 mb-8">Tell us your laundry requirement and our team will get back to you within 24 hours.</p>
+      <a href="/contact" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">Request a Quote</a>
+    </div>
+  </section>
+
+</Layout>

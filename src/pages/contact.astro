@@ -1,0 +1,132 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contact Gartech Global | Request a Quote for Laundry Machinery" description="Get in touch with Gartech Global for commercial and industrial laundry machinery. Request a quote for washing machines, dryers, steam press machines and complete laundry setups.">
+
+  <section class="w-full px-8 md:px-12 lg:px-16 xl:px-20 mx-auto py-16 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+      <!-- Left: Contact Info -->
+      <div>
+        <a href="/" class="inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-zinc-950 transition-colors mb-8">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Home
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Let's Build Your Laundry Operation</h1>
+        <p class="text-lg text-neutral-500 leading-relaxed mb-10">Whether you need a single machine or a complete laundry setup, talk to the Gartech Global team. We'll recommend the right solution for your business.</p>
+
+        <div class="space-y-4">
+          <div class="p-5 bg-white rounded-2xl border border-neutral-200/80 card-shadow">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-1">Looking For</p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              {[
+                "Commercial Washing Machine",
+                "Laundry Dryer",
+                "LG Commercial Stacker",
+                "Steam Press Machine",
+                "Industrial Laundry Machinery",
+                "Complete Laundry Setup",
+              ].map(item => (
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div class="p-5 bg-white rounded-2xl border border-neutral-200/80 card-shadow">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">Response Time</p>
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <p class="text-sm font-medium text-zinc-950">Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow p-8 md:p-10">
+        <h2 class="text-xl font-bold tracking-tight mb-6">Tell Us About Your Requirement</h2>
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Name *</label>
+              <input type="text" placeholder="Your name" required class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 transition-all" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Company Name</label>
+              <input type="text" placeholder="Your company" class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 transition-all" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Mobile Number *</label>
+              <input type="tel" placeholder="+91 00000 00000" required class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 transition-all" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Email</label>
+              <input type="email" placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 transition-all" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">City</label>
+              <input type="text" placeholder="Your city" class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 transition-all" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Business Type</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 text-neutral-700 transition-all">
+                <option value="">Select business type</option>
+                <option>Hotel / Resort</option>
+                <option>Hospital</option>
+                <option>Dry Cleaner</option>
+                <option>Commercial Laundry</option>
+                <option>Garment Manufacturer</option>
+                <option>Institution</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Machine Required</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 text-neutral-700 transition-all">
+                <option value="">Select machine type</option>
+                <option>Commercial Washing Machine</option>
+                <option>Commercial Dryer</option>
+                <option>LG Commercial Stacker</option>
+                <option>Steam Press Machine</option>
+                <option>Hydra Industrial Laundry Machine</option>
+                <option>Complete Laundry Setup</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-zinc-950 mb-1.5">Daily Laundry Volume</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 text-neutral-700 transition-all">
+                <option value="">Select volume</option>
+                <option>Below 50 KG/day</option>
+                <option>50–150 KG/day</option>
+                <option>150–500 KG/day</option>
+                <option>500–1000 KG/day</option>
+                <option>Above 1000 KG/day</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-zinc-950 mb-1.5">Message</label>
+            <textarea rows="4" placeholder="Tell us more about your requirement — space available, number of machines, timeline, etc." class="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-950/10 focus:border-zinc-950/30 placeholder:text-neutral-400 resize-none transition-all"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 text-sm font-semibold text-white bg-zinc-950 rounded-full shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.15)] hover:bg-zinc-800 transition-all hover:-translate-y-0.5 duration-150">
+            Request a Quote
+          </button>
+          <p class="text-xs text-neutral-400 text-center">We respond within 24 hours. No spam.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
