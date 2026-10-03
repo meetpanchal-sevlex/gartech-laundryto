@@ -1,137 +1,98 @@
-﻿---
+---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Gartech Global | Commercial & Industrial Laundry Machinery">
 
-    <!-- HERO: Massive Dark Mode Stage Layout -->
-  <section class="relative w-full min-h-[calc(100vh-4rem)] bg-zinc-950 flex flex-col lg:flex-row items-center overflow-hidden">
-    
-    <!-- Atmospheric Background Glows -->
-    <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/10 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-zinc-800/20 blur-[100px] rounded-full -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+<Layout title="Gartech Global - Industrial Laundry Machinery">
+  <!-- HERO SECTION -->
+  <section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-zinc-950 px-6 md:px-12 lg:px-16 xl:px-20">
+    <!-- Abstract dark background elements -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-zinc-800/40 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4"></div>
+      <div class="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
+    </div>
 
-    <!-- Left: Content Side -->
-    <div class="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-12 lg:pl-16 xl:pl-20 py-20 lg:py-24 z-10">
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 w-fit backdrop-blur-sm">
-        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.8)]"></span>
-        <span class="text-xs font-medium text-neutral-300 tracking-wide uppercase">Commercial & Industrial Systems</span>
+    <div class="relative z-10 w-full max-w-4xl pt-24 pb-20 md:py-40">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-[10px] md:text-xs font-medium mb-6 md:mb-8 backdrop-blur-md">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+        COMMERCIAL & INDUSTRIAL SYSTEMS
       </div>
-      <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tighter leading-[1.05] mb-6 text-white">
-        Commercial &<br/>Industrial<br/>
-        <span class="text-neutral-500">Laundry Machinery.</span>
+      
+      <h1 class="text-[clamp(2.5rem,8vw,4.5rem)] font-bold tracking-tight text-white mb-4 md:mb-6 leading-[1.1] md:leading-tight">
+        Commercial & Industrial<br class="hidden md:block" /> Laundry Machinery.
       </h1>
-      <p class="text-lg md:text-xl text-neutral-400 mb-10 leading-relaxed max-w-lg font-light">
+      
+      <p class="text-base md:text-xl text-neutral-400 mb-8 md:mb-10 max-w-2xl leading-relaxed">
         Heavy-duty washing, drying, and finishing equipment from 10 KG to 215 KG capacity. Engineered for reliability and backed by pan-India service.
       </p>
-      <div class="flex flex-col sm:flex-row items-start gap-4">
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-200 transition-all hover:-translate-y-0.5 duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 md:gap-4">
+        <a href="/contact" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 md:py-3.5 text-base md:text-sm font-bold md:font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all active:scale-95 md:hover:-translate-y-0.5 duration-150 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
           Request a Quote
         </a>
-        <a href="/machinery" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border border-white/10 rounded-full hover:border-white/30 hover:bg-white/5 transition-all hover:-translate-y-0.5 duration-300">
+        <a href="/machinery" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 md:py-3.5 text-base md:text-sm font-medium md:font-semibold text-white bg-transparent border border-white/20 rounded-full hover:bg-white/5 transition-all active:scale-95 md:hover:-translate-y-0.5 duration-150">
           View Machinery
         </a>
       </div>
     </div>
-
-    <!-- Right: The Stage (Ready for 3D Render) -->
-    <div class="w-full lg:w-1/2 h-[50vh] lg:h-[calc(100vh-4rem)] flex items-center justify-center p-8 lg:p-16 z-10">
-      <!-- Premium Asset Container / Wireframe Placeholder -->
-      <div class="relative w-full h-full max-h-[700px] flex items-center justify-center bg-white/[0.02] border border-white/5 rounded-3xl backdrop-blur-sm overflow-hidden group">
-        
-        <!-- Animated Scanner Line (Subtle) -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.05] to-transparent h-full w-full -translate-y-full group-hover:animate-[scan_3s_ease-in-out_infinite]"></div>
-        
-        <!-- Placeholder Grid Background -->
-        <div class="absolute inset-0 opacity-[0.15]" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
-        
-        <!-- Level 3 WebGL / Three.js 3D Machine Render -->
-        
-        <!-- ACTUAL IMAGE WILL GO HERE -->
-        <!-- <img src="/assets/machine-render.png" alt="Industrial Washer" class="absolute inset-0 w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-20 scale-110" /> -->
-
-      </div>
-    </div>
-
   </section>
 
-  <!-- AT A GLANCE STATS BAND -->
-  <section class="w-full bg-[#FAFAFA] border-b border-neutral-200/80 px-8 md:px-12 lg:px-16 xl:px-20 py-12">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 divide-x divide-neutral-200/60">
-      <div class="pl-0">
-        <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">Capacity Range</p>
-        <p class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-950">10–215 KG</p>
-      </div>
-      <div class="pl-8 md:pl-12">
-        <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">Categories</p>
-        <p class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-950">4+</p>
-      </div>
-      <div class="pl-8 md:pl-12">
-        <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">Industries</p>
-        <p class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-950">6+</p>
-      </div>
-      <div class="pl-8 md:pl-12">
-        <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">Installation</p>
-        <p class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-950">Pan-India</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCT BENTO GRID -->
-  <section class="w-full px-8 md:px-12 lg:px-16 xl:px-20 py-20">
-    <div class="mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Our Machinery Range</h2>
-      <p class="text-neutral-500 text-lg max-w-2xl">Industrial-grade equipment for every scale of laundry operation.</p>
+  <!-- MACHINERY RANGE (ADAPTIVE CAROUSEL) -->
+  <section class="w-full px-0 md:px-12 lg:px-16 xl:px-20 py-16 md:py-20 bg-neutral-50/50 overflow-hidden">
+    <div class="px-6 md:px-0 mb-8 md:mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-2 md:mb-3">Our Machinery Range</h2>
+      <p class="text-neutral-500 text-base md:text-lg">Industrial-grade equipment for every scale of laundry operation.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-
+    <!-- Adaptive Carousel (Mobile) / Grid (Desktop) -->
+    <div class="flex flex-nowrap md:grid md:grid-cols-3 gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory px-6 md:px-0 pb-8 md:pb-0 hide-scrollbar" style="scroll-padding-left: 1.5rem;">
+      
       <!-- Hero Card - Washing Machines -->
-      <a href="/machinery/commercial-washing-machines" class="md:col-span-2 group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 overflow-hidden hover:-translate-y-1">
-        <div class="p-8 pb-0">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-4">Commercial Range</div>
-          <h3 class="text-2xl font-bold tracking-tight mb-2">Commercial Washing Machines</h3>
-          <p class="text-neutral-500 mb-6">High-extraction, low-water-usage washers built for 24/7 commercial operations. 20 KG to 60 KG capacity range.</p>
+      <a href="/machinery/commercial-washing-machines" class="shrink-0 w-[85vw] md:w-auto snap-start md:col-span-2 group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 overflow-hidden md:hover:-translate-y-1">
+        <div class="p-6 md:p-8 pb-10 md:pb-8">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] md:text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-4">Commercial Range</div>
+          <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">Commercial Washing Machines</h3>
+          <p class="text-sm md:text-base text-neutral-500 mb-6 md:mb-8 leading-relaxed">High-extraction, low-water-usage washers built for 24/7 commercial operations. 20 KG to 60 KG capacity range.</p>
           <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">
             View Machines <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </div>
-
       </a>
 
       <!-- Steam Press Card -->
-      <a href="/steam-press-machines" class="group relative bg-zinc-950 text-white rounded-3xl border border-zinc-800 card-shadow hover:card-shadow-hover transition-all duration-300 overflow-hidden hover:-translate-y-1">
-        <div class="p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 border border-white/10 text-neutral-300 mb-4">Finishing</div>
-          <h3 class="text-2xl font-bold tracking-tight mb-2">Steam Press Machines</h3>
-          <p class="text-neutral-400 mb-6">Professional steam pressing for dry cleaners, hotels and commercial laundries.</p>
+      <a href="/steam-press-machines" class="shrink-0 w-[85vw] md:w-auto snap-start group relative bg-zinc-950 text-white rounded-3xl border border-zinc-800 card-shadow hover:card-shadow-hover transition-all duration-300 overflow-hidden md:hover:-translate-y-1">
+        <div class="p-6 md:p-8 pb-10 md:pb-8">
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] md:text-xs font-medium bg-white/10 border border-white/10 text-neutral-300 mb-4">Finishing</div>
+          <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">Steam Press Machines</h3>
+          <p class="text-sm md:text-base text-neutral-400 mb-6 md:mb-8 leading-relaxed">Professional steam pressing for dry cleaners, hotels and commercial laundries.</p>
           <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-white group-hover:gap-2.5 transition-all">
             View Models <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </div>
-        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white/5 rounded-tl-[60px]"></div>
+        <div class="absolute -bottom-12 -right-12 w-40 h-40 md:w-48 md:h-48 bg-zinc-900 rounded-[2rem] transform rotate-12 group-hover:rotate-6 transition-transform"></div>
       </a>
 
-      <!-- Dryers -->
-      <a href="/machinery/commercial-laundry-dryers" class="group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 p-8">
-        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-4">Commercial</div>
-        <h3 class="text-2xl font-bold tracking-tight mb-2">Commercial Laundry Dryers</h3>
-        <p class="text-neutral-500 mb-6">Energy-efficient tumble dryers. 20 KG to 60 KG range.</p>
+      <!-- Laundry Dryers -->
+      <a href="/machinery/commercial-laundry-dryers" class="shrink-0 w-[85vw] md:w-auto snap-start group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 md:hover:-translate-y-1 p-6 md:p-8 pb-10 md:pb-8">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] md:text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-4">Commercial</div>
+        <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">Commercial Laundry Dryers</h3>
+        <p class="text-sm md:text-base text-neutral-500 mb-6 md:mb-8 leading-relaxed">Energy-efficient tumble dryers. 20 KG to 60 KG range.</p>
         <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">View Dryers <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
 
       <!-- LG Stackers -->
-      <a href="/machinery/lg-commercial-stackers" class="group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 p-8">
-        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 border border-blue-100 text-blue-700 mb-4">LG Commercial</div>
-        <h3 class="text-2xl font-bold tracking-tight mb-2">LG Commercial Stackers</h3>
-        <p class="text-neutral-500 mb-6">Space-saving stacked units. 10 KG and 15 KG models.</p>
+      <a href="/machinery/lg-commercial-stackers" class="shrink-0 w-[85vw] md:w-auto snap-start group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 md:hover:-translate-y-1 p-6 md:p-8 pb-10 md:pb-8">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] md:text-xs font-medium bg-blue-50 border border-blue-100 text-blue-700 mb-4">LG Commercial</div>
+        <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">LG Commercial Stackers</h3>
+        <p class="text-sm md:text-base text-neutral-500 mb-6 md:mb-8 leading-relaxed">Space-saving stacked units. 10 KG and 15 KG models.</p>
         <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">View Stackers <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
 
       <!-- Hydra Industrial -->
-      <a href="/machinery/hydra-industrial-laundry-machinery" class="group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 p-8">
-        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 border border-amber-100 text-amber-700 mb-4">Industrial</div>
-        <h3 class="text-2xl font-bold tracking-tight mb-2">Hydra Industrial Laundry</h3>
-        <p class="text-neutral-500 mb-6">Heavy-duty machinery. 30 KG to 215 KG capacity range.</p>
+      <a href="/machinery/hydra-industrial-laundry-machinery" class="shrink-0 w-[85vw] md:w-auto snap-start group relative bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 md:hover:-translate-y-1 p-6 md:p-8 pb-10 md:pb-8">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] md:text-xs font-medium bg-amber-50 border border-amber-100 text-amber-700 mb-4">Industrial</div>
+        <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">Hydra Industrial Laundry</h3>
+        <p class="text-sm md:text-base text-neutral-500 mb-6 md:mb-8 leading-relaxed">Heavy-duty machinery. 30 KG to 215 KG capacity range.</p>
         <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">View Industrial <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
 
@@ -140,23 +101,23 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- INDUSTRIES -->
   <section class="bg-white border-y border-neutral-200/80 py-20">
-    <div class="w-full px-8 md:px-12 lg:px-16 xl:px-20">
-      <div class="text-center mb-14">
+    <div class="w-full px-6 md:px-12 lg:px-16 xl:px-20">
+      <div class="text-center mb-10 md:mb-14">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Industries We Serve</h2>
-        <p class="text-neutral-500 text-lg">Machinery solutions for every professional laundry application.</p>
+        <p class="text-neutral-500 text-base md:text-lg">Machinery solutions for every professional laundry application.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
         {[
-          { label: "Hotels & Resorts", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-blue-500 transition-colors duration-300"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>' },
-          { label: "Hospitals", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-rose-500 transition-colors duration-300"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M12 16v-6"/><path d="M9 13h6"/></svg>' },
-          { label: "Dry Cleaners", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-cyan-500 transition-colors duration-300"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>' },
-          { label: "Commercial Laundries", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-amber-500 transition-colors duration-300"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>' },
-          { label: "Garment Manufacturers", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-indigo-500 transition-colors duration-300"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/><line x1="14.47" x2="20" y1="14.48" y2="20"/><line x1="8.12" x2="12" y1="8.12" y2="12"/></svg>' },
-          { label: "Institutions", icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-emerald-500 transition-colors duration-300"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>' },
+          { label: "Hotels & Resorts", icon: '<svg width="24" height="24" md-width="28" md-height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-blue-500 transition-colors duration-300"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>' },
+          { label: "Hospitals", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-rose-500 transition-colors duration-300"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M12 16v-6"/><path d="M9 13h6"/></svg>' },
+          { label: "Dry Cleaners", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-cyan-500 transition-colors duration-300"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>' },
+          { label: "Commercial", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-amber-500 transition-colors duration-300"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>' },
+          { label: "Garment Mfg", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-indigo-500 transition-colors duration-300"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/><line x1="14.47" x2="20" y1="14.48" y2="20"/><line x1="8.12" x2="12" y1="8.12" y2="12"/></svg>' },
+          { label: "Institutions", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-emerald-500 transition-colors duration-300"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>' },
         ].map((item) => (
-          <div class="group flex flex-col items-center justify-center gap-4 p-8 bg-neutral-50 rounded-2xl border border-neutral-200/60 text-center hover:bg-white hover:card-shadow hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 rounded-xl bg-white border border-neutral-200/80 shadow-sm flex items-center justify-center mb-1 group-hover:scale-110 group-hover:shadow-md transition-all duration-300" set:html={item.icon}></div>
-            <span class="text-sm font-medium text-neutral-700">{item.label}</span>
+          <div class="group flex flex-col items-center justify-center gap-3 p-4 md:p-8 bg-neutral-50 rounded-2xl border border-neutral-200/60 text-center hover:bg-white hover:card-shadow hover:-translate-y-1 transition-all duration-300">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-neutral-200/80 shadow-sm flex items-center justify-center mb-1 group-hover:scale-110 group-hover:shadow-md transition-all duration-300" set:html={item.icon}></div>
+            <span class="text-[11px] md:text-sm font-medium text-neutral-700 leading-tight">{item.label}</span>
           </div>
         ))}
       </div>
@@ -164,22 +125,22 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- WHY GARTECH -->
-  <section class="w-full px-8 md:px-12 lg:px-16 xl:px-20 py-20">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+  <section class="w-full px-6 md:px-12 lg:px-16 xl:px-20 py-16 md:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
       <div>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-5">Why Choose Gartech Global?</h2>
-        <p class="text-neutral-500 text-lg mb-8 leading-relaxed">A machinery partner that understands the complete laundry workflow — from washing and drying to finishing and support.</p>
-        <a href="/why-us" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-zinc-950 bg-white border border-neutral-200 rounded-full hover:border-neutral-300 hover:bg-neutral-50 transition-all hover:-translate-y-0.5 duration-150">Learn More About Us</a>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 md:mb-5">Why Choose Gartech Global?</h2>
+        <p class="text-neutral-500 text-base md:text-lg mb-8 leading-relaxed">A machinery partner that understands the complete laundry workflow - from washing and drying to finishing and support.</p>
+        <a href="/why-us" class="inline-flex items-center gap-2 px-6 py-3.5 md:py-3 text-base md:text-sm font-bold md:font-semibold text-zinc-950 bg-white border border-neutral-200 rounded-full hover:border-neutral-300 hover:bg-neutral-50 transition-all active:scale-95 md:hover:-translate-y-0.5 duration-150 w-full md:w-auto justify-center">Learn More About Us</a>
       </div>
-      <div class="grid grid-cols-1 gap-4">
+      <div class="grid grid-cols-1 gap-3 md:gap-4">
         {[
           { title: "Wide Capacity Range", desc: "From 10 KG compact stackers to 215 KG industrial machines." },
-          { title: "Multiple Machinery Categories", desc: "Washing, drying, finishing and industrial — all in one place." },
-          { title: "Application-Based Approach", desc: "Machinery recommendations based on your actual operation." },
-          { title: "Complete Laundry Thinking", desc: "We consider how machines work together as a complete workflow." },
+          { title: "Multiple Categories", desc: "Washing, drying, finishing and industrial - all in one place." },
+          { title: "Application-Based", desc: "Machinery recommendations based on your actual operation." },
+          { title: "Complete Workflow", desc: "We consider how machines work together." },
           { title: "After-Sales Support", desc: "Installation, commissioning, guidance and spare parts." },
         ].map((item) => (
-          <div class="flex items-start gap-4 p-5 bg-white rounded-2xl border border-neutral-200/80 card-shadow">
+          <div class="flex items-start gap-4 p-4 md:p-5 bg-white rounded-2xl border border-neutral-200/80 card-shadow">
             <div class="w-8 h-8 rounded-lg bg-zinc-950 flex items-center justify-center shrink-0 mt-0.5">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3.5 3.5 5.5-6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
@@ -194,11 +155,11 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- CTA SECTION - full bleed dark -->
-  <section class="w-full bg-zinc-950 py-24 px-4 md:px-8">
-    <div class="w-full px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-center">
+  <section class="w-full bg-zinc-950 py-20 md:py-24 px-6 md:px-8">
+    <div class="w-full max-w-3xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Ready to Build Your Laundry Operation?</h2>
-      <p class="text-neutral-400 text-lg mb-8 max-w-xl mx-auto">Tell us your daily volume, machine requirements, and business type — we will recommend the right setup for you.</p>
-      <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">
+      <p class="text-neutral-400 text-base md:text-lg mb-8">Tell us your daily volume, machine requirements, and business type - we will recommend the right setup for you.</p>
+      <a href="/contact" class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all active:scale-95 md:hover:-translate-y-0.5 duration-150">
         Request a Free Quote
       </a>
     </div>
