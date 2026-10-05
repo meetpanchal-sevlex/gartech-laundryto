@@ -105,7 +105,7 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Industries We Serve</h2>
         <p class="text-neutral-500 text-base md:text-lg">Machinery solutions for every professional laundry application.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+      <div class="flex overflow-x-auto md:grid md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 snap-x snap-mandatory hide-scrollbar pb-4 md:pb-0 -mx-4 md:mx-0 px-4 md:px-0">
         {[
           { label: "Hotels & Resorts", icon: '<svg width="24" height="24" md-width="28" md-height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-blue-500 transition-colors duration-300"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>' },
           { label: "Hospitals", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-rose-500 transition-colors duration-300"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M12 16v-6"/><path d="M9 13h6"/></svg>' },
@@ -114,7 +114,7 @@ import Layout from '../layouts/Layout.astro';
           { label: "Garment Mfg", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-indigo-500 transition-colors duration-300"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/><line x1="14.47" x2="20" y1="14.48" y2="20"/><line x1="8.12" x2="12" y1="8.12" y2="12"/></svg>' },
           { label: "Institutions", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-600 group-hover:text-emerald-500 transition-colors duration-300"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>' },
         ].map((item) => (
-          <div class="group flex flex-col items-center justify-center gap-3 p-4 md:p-8 bg-neutral-50 rounded-2xl border border-neutral-200/60 text-center hover:bg-white hover:card-shadow hover:-translate-y-1 transition-all duration-300">
+          <div class="shrink-0 w-28 md:w-auto snap-start group flex flex-col items-center justify-center gap-3 p-4 md:p-8 bg-neutral-50 rounded-[18px] md:rounded-2xl border border-neutral-200/60 text-center hover:bg-white hover:card-shadow hover:-translate-y-1 transition-all duration-300">
             <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-neutral-200/80 shadow-sm flex items-center justify-center mb-1 group-hover:scale-110 group-hover:shadow-md transition-all duration-300" set:html={item.icon}></div>
             <span class="text-[11px] md:text-sm font-medium text-neutral-700 leading-tight">{item.label}</span>
           </div>
