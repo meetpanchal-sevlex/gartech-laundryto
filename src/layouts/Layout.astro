@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Gartech Global provides commercial and industrial laundry machinery, professional steam press machines, washing machines, dryers and garment-finishing equipment." } = Astro.props;
+const { title, description = "Gartech Global - India's trusted manufacturer & supplier of industrial laundry machinery, commercial washing machines, tumble dryers, steam press, and turnkey laundry setups since 1998." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -21,198 +21,396 @@ const { title, description = "Gartech Global provides commercial and industrial 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#FAFAFA] text-zinc-950 antialiased">
+  <body class="bg-[#FAFAFA] text-zinc-950 antialiased flex flex-col min-h-screen">
 
-    <!-- NAVBAR -->
-    <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200/60">
-      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between md:justify-start gap-4">
+    <!-- HEADER & TOP INDUSTRIAL BAR -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-200/80 shadow-xs">
+      
+      <!-- TOP CONTACT & TRUST BAR (Shaikh Petroleum Style) -->
+      <div class="hidden lg:block bg-zinc-950 text-neutral-300 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          
+          <!-- Left: Direct Contact Hotline -->
+          <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2 font-medium text-white">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Pan-India Sales Hotline:
+            </span>
+            <a href="tel:+919898029292" class="hover:text-white transition-colors flex items-center gap-1.5 font-semibold text-neutral-200">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 98980 29292
+            </a>
+            <a href="mailto:sales@gartechglobal.com" class="hover:text-white transition-colors flex items-center gap-1.5 text-neutral-400">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              sales@gartechglobal.com
+            </a>
+            <span class="text-neutral-500 hidden xl:inline">|</span>
+            <span class="text-neutral-400 hidden xl:inline">
+              Plant: GIDC Industrial Estate, Gujarat &bull; Pan-India Dispatch
+            </span>
+          </div>
 
-        <!-- Mobile Hamburger Button (Left) -->
-        <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center p-2 -ml-2 text-zinc-950 hover:bg-neutral-100 rounded-lg transition-colors">
+          <!-- Right: Trust Badges & Direct WhatsApp -->
+          <div class="flex items-center gap-5">
+            <span class="text-neutral-400 font-mono text-[11px]">
+              EST. 1998 &bull; 25+ YRS EXCELLENCE
+            </span>
+            <span class="px-2 py-0.5 rounded-sm bg-zinc-800 text-neutral-300 font-mono text-[10px] tracking-wider uppercase border border-zinc-700">
+              ISO 9001:2015
+            </span>
+            <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20I%20am%20interested%20in%20industrial%20laundry%20machinery.%20Please%20share%20the%20catalogue%20and%20pricing." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 transition-colors">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.5 2 2.012 6.48 2.012 12c0 2.074.634 4.004 1.722 5.613L2.004 22l4.542-1.685A9.957 9.957 0 0 0 12.031 22c5.522 0 10.012-4.48 10.012-10S17.553 2 12.031 2zm5.795 14.282c-.244.686-1.42 1.312-1.956 1.393-.536.082-1.222.115-1.983-.127-.463-.146-1.058-.344-1.825-.678-3.21-1.393-5.297-4.664-5.457-4.88-.16-.217-1.304-1.737-1.304-3.314s.827-2.353 1.12-2.674c.294-.321.642-.401.856-.401.214 0 .428.002.615.011.198.01.463-.075.723.551.268.643.916 2.234.996 2.396.08.16.134.348.027.562-.107.214-.16.348-.321.536-.16.187-.337.417-.481.56-.16.16-.328.334-.141.654.187.32.83 1.369 1.782 2.218 1.224 1.092 2.256 1.43 2.577 1.59.32.16.508.134.695-.08.188-.215.803-.936 1.017-1.257.214-.321.428-.268.722-.16.294.107 1.872.883 2.193 1.044.321.16.536.241.615.375.08.134.08.776-.164 1.462z"/></svg>
+              WhatsApp Support
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MAIN NAVIGATION BAR -->
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+
+        <!-- Mobile: Hamburger Menu (Left) -->
+        <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center p-2 -ml-2 text-zinc-950 hover:bg-neutral-100 rounded-lg transition-colors" aria-label="Toggle Navigation">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
 
-        <!-- Logo -->
-        <a href="/" class="font-bold text-xl md:text-2xl tracking-tight shrink-0 flex items-center gap-2.5 md:gap-3.5 absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
-          <span class="w-8 h-8 md:w-11 md:h-11 bg-zinc-950 rounded-[10px] md:rounded-xl flex items-center justify-center shadow-md">
-            <svg width="16" height="16" class="w-4 h-4 md:w-[22px] md:h-[22px]" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Brand Logo -->
+        <a href="/" class="font-bold text-xl md:text-2xl tracking-tight shrink-0 flex items-center gap-2.5 md:gap-3 absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+          <span class="w-8 h-8 md:w-10 md:h-10 bg-zinc-950 rounded-lg md:rounded-xl flex items-center justify-center shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="5" height="5" rx="1" fill="white"/>
               <rect x="9" y="2" width="5" height="5" rx="1" fill="white" opacity="0.6"/>
               <rect x="2" y="9" width="5" height="5" rx="1" fill="white" opacity="0.6"/>
               <rect x="9" y="9" width="5" height="5" rx="1" fill="white"/>
             </svg>
           </span>
-          <span>Gartech Global</span>
+          <div class="flex flex-col">
+            <span class="leading-none text-zinc-950 font-extrabold tracking-tight">Gartech Global</span>
+            <span class="text-[9px] uppercase tracking-wider text-neutral-400 font-medium hidden sm:block">Industrial Laundry Systems</span>
+          </div>
         </a>
-        
-        <!-- Spacer for mobile balance -->
-        <div class="w-8 h-8 lg:hidden"></div>
 
-        <div class="hidden lg:flex items-center justify-between flex-1 ml-6">
-          <!-- Desktop Nav -->
-          <nav class="flex items-center gap-3 text-base font-semibold text-zinc-700 tracking-tight">
+        <!-- Mobile: Quick Direct Call Button (Right) -->
+        <a href="tel:+919898029292" class="lg:hidden p-2 text-zinc-950 hover:bg-neutral-100 rounded-lg" aria-label="Call Sales">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <div class="hidden lg:flex items-center justify-between flex-1 ml-8">
+          <nav class="flex items-center gap-1 xl:gap-2 text-sm font-semibold text-zinc-700">
+            
             <!-- Laundry Machinery Dropdown -->
             <div class="relative group">
-              <button class="flex items-center gap-1.5 px-4 py-2.5 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">
+              <a href="/machinery" class="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">
                 Laundry Machinery
-                <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-              <div class="absolute top-full left-0 mt-3 w-96 bg-white rounded-3xl shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_12px_40px_-8px_rgba(0,0,0,0.15)] p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0">
-                <a href="/machinery/lg-commercial-stackers" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-blue-50/50 group/item transition-colors">
-                  <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center shrink-0 border border-blue-100 group-hover/item:scale-105 transition-transform">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 12h16"/><path d="M12 7h.01"/><path d="M12 17h.01"/></svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <div class="absolute top-full left-0 mt-2 w-96 bg-white rounded-2xl shadow-[0_12px_40px_-8px_rgba(0,0,0,0.15)] border border-neutral-200/80 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0">
+                <a href="/machinery/commercial-washing-machines" class="flex items-start gap-3.5 p-3 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-9 h-9 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center shrink-0 border border-blue-100">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 2v2M12 20v2"/></svg>
                   </div>
                   <div>
-                    <p class="font-semibold text-zinc-950 text-base mb-0.5">LG Commercial Stackers</p>
-                    <p class="text-neutral-500 text-sm">10 KG &middot; 15 KG</p>
+                    <p class="font-semibold text-zinc-950 text-sm">Commercial Washers</p>
+                    <p class="text-neutral-500 text-xs">20 KG to 120 KG &middot; High G-Force</p>
                   </div>
                 </a>
-                <a href="/machinery/commercial-washing-machines" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-neutral-50 group/item transition-colors">
-                  <div class="w-10 h-10 bg-neutral-100 text-neutral-600 rounded-xl flex items-center justify-center shrink-0 border border-neutral-200/80 group-hover/item:scale-105 transition-transform">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M12 12h.01"/></svg>
+                <a href="/machinery/commercial-laundry-dryers" class="flex items-start gap-3.5 p-3 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-9 h-9 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center shrink-0 border border-amber-100">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="12" cy="12" r="5"/></svg>
                   </div>
                   <div>
-                    <p class="font-semibold text-zinc-950 text-base mb-0.5">Washing Machines</p>
-                    <p class="text-neutral-500 text-sm">20 KG to 60 KG</p>
+                    <p class="font-semibold text-zinc-950 text-sm">Industrial Tumble Dryers</p>
+                    <p class="text-neutral-500 text-xs">15 KG to 100 KG &middot; Reversing Drum</p>
                   </div>
                 </a>
-                <a href="/machinery/commercial-laundry-dryers" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-neutral-50 group/item transition-colors">
-                  <div class="w-10 h-10 bg-neutral-100 text-neutral-600 rounded-xl flex items-center justify-center shrink-0 border border-neutral-200/80 group-hover/item:scale-105 transition-transform">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 9a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"/></svg>
+                <a href="/machinery/lg-commercial-stackers" class="flex items-start gap-3.5 p-3 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-9 h-9 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center shrink-0 border border-indigo-100">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 12h16"/></svg>
                   </div>
                   <div>
-                    <p class="font-semibold text-zinc-950 text-base mb-0.5">Laundry Dryers</p>
-                    <p class="text-neutral-500 text-sm">20 KG to 60 KG</p>
+                    <p class="font-semibold text-zinc-950 text-sm">LG Commercial Stackers</p>
+                    <p class="text-neutral-500 text-xs">10 KG &middot; 15 KG &middot; Laundromat Ready</p>
                   </div>
                 </a>
-                <a href="/machinery/hydra-industrial-laundry-machinery" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-amber-50/50 group/item transition-colors">
-                  <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center shrink-0 border border-amber-100 group-hover/item:scale-105 transition-transform">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                <a href="/machinery/hydra-industrial-laundry-machinery" class="flex items-start gap-3.5 p-3 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-9 h-9 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center shrink-0 border border-emerald-100">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
                   </div>
                   <div>
-                    <p class="font-semibold text-zinc-950 text-base mb-0.5">Hydra Industrial</p>
-                    <p class="text-neutral-500 text-sm">30 KG to 215 KG</p>
+                    <p class="font-semibold text-zinc-950 text-sm">Hydra Barrier Washers</p>
+                    <p class="text-neutral-500 text-xs">60 KG to 215 KG &middot; Cleanroom & Pharma</p>
                   </div>
                 </a>
               </div>
             </div>
 
-            <a href="/steam-press-machines" class="px-4 py-2.5 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Steam Press</a>
-            <a href="/garment-finishing" class="px-4 py-2.5 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Finishing</a>
-            <a href="/industries" class="px-4 py-2.5 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Industries</a>
-            <a href="/about" class="px-4 py-2.5 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">About</a>
+            <a href="/steam-press-machines" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Steam Press</a>
+            <a href="/garment-finishing" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Finishing</a>
+            
+            <!-- SPECIFICATION & PRICE MATRIX (Shaikh Petroleum Inspired) -->
+            <a href="/price-list" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all flex items-center gap-1.5 text-blue-600 font-bold">
+              <span>Price List & Specs</span>
+              <span class="px-1.5 py-0.2 rounded-full bg-blue-100 text-blue-700 text-[10px] uppercase font-bold tracking-wider">Specs</span>
+            </a>
+
+            <a href="/industries" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Industries</a>
+            <a href="/setup" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Setup</a>
+            <a href="/why-us" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Why Us</a>
+            <a href="/contact" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Contact</a>
           </nav>
 
-          <!-- CTA (Desktop Only) -->
-          <a href="/contact" class="shrink-0 items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-zinc-950 rounded-full shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.15)] hover:bg-zinc-800 transition-all hover:-translate-y-0.5 active:translate-y-0 duration-150">
-            Request Quote
+          <!-- Right Action CTAs -->
+          <div class="flex items-center gap-3">
+            <a href="/contact#catalogue" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full border border-neutral-300 text-xs font-semibold text-zinc-800 hover:bg-neutral-50 transition-all">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Brochure (PDF)
+            </a>
+            <a href="/contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-zinc-950 text-white text-xs font-bold hover:bg-zinc-800 transition-all active:scale-95 shadow-sm">
+              Request Quote
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MOBILE SLIDE-OUT DRAWER -->
+      <div id="mobile-menu" class="lg:hidden fixed inset-x-0 top-16 bg-white border-b border-neutral-200 shadow-xl transition-all duration-300 transform -translate-y-full opacity-0 pointer-events-none max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div class="p-6 space-y-6">
+
+          <!-- Mobile Direct Actions -->
+          <div class="grid grid-cols-2 gap-3">
+            <a href="tel:+919898029292" class="flex items-center justify-center gap-2 p-3 rounded-xl bg-zinc-950 text-white text-xs font-bold text-center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call Sales
+            </a>
+            <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20I%20am%20interested%20in%20industrial%20laundry%20machinery." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 p-3 rounded-xl bg-emerald-600 text-white text-xs font-bold text-center">
+              WhatsApp
+            </a>
+          </div>
+
+          <!-- Feature Nav Item -->
+          <a href="/price-list" class="flex items-center justify-between p-3.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-900 font-bold text-sm">
+            <div class="flex items-center gap-2.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+              <span>Price List & Specifications</span>
+            </div>
+            <span class="text-xs bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">VIEW</span>
           </a>
+
+          <!-- Standard Links -->
+          <div class="space-y-1 text-sm font-semibold text-zinc-800">
+            <p class="text-[11px] uppercase tracking-wider text-neutral-400 font-bold px-3 py-1">Machinery Catalog</p>
+            <a href="/machinery" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">All Laundry Machinery</a>
+            <a href="/machinery/commercial-washing-machines" class="block px-3 py-2 rounded-lg hover:bg-neutral-100 text-neutral-600">&bull; Commercial Washing Machines</a>
+            <a href="/machinery/commercial-laundry-dryers" class="block px-3 py-2 rounded-lg hover:bg-neutral-100 text-neutral-600">&bull; Industrial Tumble Dryers</a>
+            <a href="/machinery/lg-commercial-stackers" class="block px-3 py-2 rounded-lg hover:bg-neutral-100 text-neutral-600">&bull; LG Commercial Stackers</a>
+            <a href="/machinery/hydra-industrial-laundry-machinery" class="block px-3 py-2 rounded-lg hover:bg-neutral-100 text-neutral-600">&bull; Hydra Barrier Washers</a>
+            
+            <p class="text-[11px] uppercase tracking-wider text-neutral-400 font-bold px-3 py-1 mt-4">Finishing & Solutions</p>
+            <a href="/steam-press-machines" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Steam Press Machines</a>
+            <a href="/garment-finishing" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Garment Finishing Equipment</a>
+            <a href="/setup" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Commercial Laundry Setup</a>
+            <a href="/industries" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Industries We Serve</a>
+            <a href="/why-us" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Why Choose Gartech</a>
+            <a href="/service-support" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Service & Spares Support</a>
+            <a href="/about" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">About Company</a>
+            <a href="/contact" class="block px-3 py-2 rounded-lg hover:bg-neutral-100">Contact & Plant Locations</a>
+          </div>
+
+          <div class="pt-4 border-t border-neutral-200">
+            <p class="text-xs text-neutral-500 mb-2">Plant: GIDC Industrial Estate, Gujarat</p>
+            <p class="text-xs text-neutral-500">Sales: sales@gartechglobal.com</p>
+          </div>
+
         </div>
       </div>
+
     </header>
 
-    <!-- Mobile Navigation Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-24 pb-8 px-6 overflow-y-auto">
-      <div class="flex flex-col gap-6 text-lg font-bold text-zinc-950">
-        <div class="pb-4 border-b border-neutral-100">
-          <p class="text-sm font-semibold text-neutral-400 uppercase tracking-wider mb-4">Laundry Machinery</p>
-          <div class="flex flex-col gap-4 pl-2">
-            <a href="/machinery/lg-commercial-stackers" class="hover:text-blue-600 transition-colors">LG Commercial Stackers</a>
-            <a href="/machinery/commercial-washing-machines" class="hover:text-blue-600 transition-colors">Commercial Washing Machines</a>
-            <a href="/machinery/commercial-laundry-dryers" class="hover:text-blue-600 transition-colors">Commercial Laundry Dryers</a>
-            <a href="/machinery/hydra-industrial-laundry-machinery" class="hover:text-blue-600 transition-colors">Hydra Industrial</a>
-          </div>
-        </div>
-        <a href="/steam-press-machines" class="hover:text-blue-600 transition-colors">Steam Press</a>
-        <a href="/garment-finishing" class="hover:text-blue-600 transition-colors">Finishing</a>
-        <a href="/industries" class="hover:text-blue-600 transition-colors">Industries</a>
-        <a href="/about" class="hover:text-blue-600 transition-colors">About</a>
-        <a href="/service-support" class="hover:text-blue-600 transition-colors">Service & Support</a>
-      </div>
-      <div class="mt-auto pt-8">
-        <a href="/contact" class="flex items-center justify-center w-full px-6 py-4 text-base font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
-          Request a Quote
-        </a>
-      </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <main class="pt-20">
+    <!-- CONTENT WRAPPER (Accounts for fixed header height) -->
+    <main class="flex-1 pt-16 lg:pt-28">
       <slot />
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-zinc-950 text-white border-t border-white/5">
-      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mx-auto py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <!-- Brand -->
-          <div class="md:col-span-1">
-            <div class="font-bold text-lg tracking-tight mb-4 flex items-center gap-2">
-              <span class="w-7 h-7 bg-white/10 rounded-lg flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="white"/><rect x="9" y="2" width="5" height="5" rx="1" fill="white" opacity="0.5"/><rect x="2" y="9" width="5" height="5" rx="1" fill="white" opacity="0.5"/><rect x="9" y="9" width="5" height="5" rx="1" fill="white"/></svg>
-              </span>
-              Gartech Global
+    <!-- FLOATING MOBILE BOTTOM CONNECT BAR (Shaikh Petroleum Quick Action Standard) -->
+    <div class="lg:hidden fixed bottom-4 inset-x-4 z-40 flex items-center gap-2 p-1.5 bg-zinc-950/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/10">
+      <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20please%20share%20the%20machinery%20catalogue%20and%20price%20quotation." target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 py-3 px-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.5 2 2.012 6.48 2.012 12c0 2.074.634 4.004 1.722 5.613L2.004 22l4.542-1.685A9.957 9.957 0 0 0 12.031 22c5.522 0 10.012-4.48 10.012-10S17.553 2 12.031 2zm5.795 14.282c-.244.686-1.42 1.312-1.956 1.393-.536.082-1.222.115-1.983-.127-.463-.146-1.058-.344-1.825-.678-3.21-1.393-5.297-4.664-5.457-4.88-.16-.217-1.304-1.737-1.304-3.314s.827-2.353 1.12-2.674c.294-.321.642-.401.856-.401.214 0 .428.002.615.011.198.01.463-.075.723.551.268.643.916 2.234.996 2.396.08.16.134.348.027.562-.107.214-.16.348-.321.536-.16.187-.337.417-.481.56-.16.16-.328.334-.141.654.187.32.83 1.369 1.782 2.218 1.224 1.092 2.256 1.43 2.577 1.59.32.16.508.134.695-.08.188-.215.803-.936 1.017-1.257.214-.321.428-.268.722-.16.294.107 1.872.883 2.193 1.044.321.16.536.241.615.375.08.134.08.776-.164 1.462z"/></svg>
+        WhatsApp
+      </a>
+      <a href="tel:+919898029292" class="flex-1 flex items-center justify-center gap-2 py-3 px-3 bg-white text-zinc-950 rounded-xl text-xs font-bold transition-colors">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Sales
+      </a>
+      <a href="/price-list" class="flex items-center justify-center py-3 px-3.5 bg-zinc-800 text-white rounded-xl text-xs font-semibold" title="View Specifications">
+        Specs
+      </a>
+    </div>
+
+    <!-- INDUSTRIAL FOOTER (Shaikh Petroleum Model) -->
+    <footer class="bg-zinc-950 text-white mt-auto border-t border-zinc-800">
+      
+      <!-- Trust Header in Footer -->
+      <div class="border-b border-zinc-900 py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <p class="text-neutral-400 text-sm leading-relaxed">Professional Laundry Machinery & Garment Finishing Solutions for Commercial & Industrial Operations.</p>
+            <div>
+              <p class="font-bold text-sm text-white">25+ Years Legacy</p>
+              <p class="text-xs text-neutral-400">Serving Indian industry since 1998</p>
+            </div>
           </div>
-
-          <!-- Machinery -->
-          <div>
-            <h4 class="font-semibold text-sm mb-4 text-neutral-300 uppercase tracking-wider">Laundry Machinery</h4>
-            <ul class="space-y-2.5">
-              <li><a href="/machinery/lg-commercial-stackers" class="text-neutral-400 text-sm hover:text-white transition-colors">LG Commercial Stackers</a></li>
-              <li><a href="/machinery/commercial-washing-machines" class="text-neutral-400 text-sm hover:text-white transition-colors">Commercial Washing Machines</a></li>
-              <li><a href="/machinery/commercial-laundry-dryers" class="text-neutral-400 text-sm hover:text-white transition-colors">Commercial Laundry Dryers</a></li>
-              <li><a href="/machinery/hydra-industrial-laundry-machinery" class="text-neutral-400 text-sm hover:text-white transition-colors">Hydra Industrial Machinery</a></li>
-            </ul>
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-white">ISO 9001:2015</p>
+              <p class="text-xs text-neutral-400">Certified manufacturing quality</p>
+            </div>
           </div>
-
-          <!-- Company -->
-          <div>
-            <h4 class="font-semibold text-sm mb-4 text-neutral-300 uppercase tracking-wider">Company</h4>
-            <ul class="space-y-2.5">
-              <li><a href="/steam-press-machines" class="text-neutral-400 text-sm hover:text-white transition-colors">Steam Press Machines</a></li>
-              <li><a href="/garment-finishing" class="text-neutral-400 text-sm hover:text-white transition-colors">Garment Finishing</a></li>
-              <li><a href="/industries" class="text-neutral-400 text-sm hover:text-white transition-colors">Industries We Serve</a></li>
-              <li><a href="/setup" class="text-neutral-400 text-sm hover:text-white transition-colors">Commercial Laundry Setup</a></li>
-              <li><a href="/service-support" class="text-neutral-400 text-sm hover:text-white transition-colors">Service & Support</a></li>
-              <li><a href="/about" class="text-neutral-400 text-sm hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/why-us" class="text-neutral-400 text-sm hover:text-white transition-colors">Why Gartech Global</a></li>
-            </ul>
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-white">Pan-India Dispatch</p>
+              <p class="text-xs text-neutral-400">24-48 hr service network</p>
+            </div>
           </div>
-
-          <!-- Contact -->
-          <div>
-            <h4 class="font-semibold text-sm mb-4 text-neutral-300 uppercase tracking-wider">Get In Touch</h4>
-            <p class="text-neutral-400 text-sm leading-relaxed mb-4">Looking for the right machinery for your laundry operation?</p>
-            <a href="/contact" class="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">
-              Request a Quote
-            </a>
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-white">Ready Spares Hub</p>
+              <p class="text-xs text-neutral-400">10,000+ SKU inventory</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p class="text-neutral-500 text-sm">&copy; 2025 Gartech Global. All rights reserved.</p>
-          <p class="text-neutral-600 text-sm">Professional Laundry Machinery Supplier</p>
+      <!-- Main Footer Columns -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+          
+          <!-- Col 1: About & Registered Plant -->
+          <div class="lg:col-span-2">
+            <a href="/" class="font-bold text-xl tracking-tight flex items-center gap-2.5 mb-4 text-white">
+              <span class="w-8 h-8 bg-white text-zinc-950 rounded-lg flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="currentColor"/><rect x="9" y="2" width="5" height="5" rx="1" fill="currentColor" opacity="0.6"/><rect x="2" y="9" width="5" height="5" rx="1" fill="currentColor" opacity="0.6"/><rect x="9" y="9" width="5" height="5" rx="1" fill="currentColor"/></svg>
+              </span>
+              <span>Gartech Global</span>
+            </a>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-6 max-w-sm">
+              Established in 1998, Gartech Global is an Indian manufacturer and pan-India supplier of heavy-duty industrial laundry equipment, commercial washing machines, tumble dryers, steam press systems, and turnkey turnkey laundry setups.
+            </p>
+            
+            <div class="space-y-2 text-xs text-neutral-400">
+              <p class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-neutral-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span><strong>Plant & Works:</strong> Plot No. 48, GIDC Industrial Estate, Phase II, Ahmedabad / Gujarat – 382445, India</span>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-neutral-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <span><strong>Hotline:</strong> +91 98980 29292 / +91 98989 70097</span>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-neutral-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span><strong>Email:</strong> sales@gartechglobal.com</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Col 2: Machinery -->
+          <div>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-neutral-300 mb-4">Machinery Range</h4>
+            <ul class="space-y-2 text-sm text-neutral-400">
+              <li><a href="/machinery/commercial-washing-machines" class="hover:text-white transition-colors">Commercial Washers</a></li>
+              <li><a href="/machinery/commercial-laundry-dryers" class="hover:text-white transition-colors">Industrial Dryers</a></li>
+              <li><a href="/machinery/lg-commercial-stackers" class="hover:text-white transition-colors">LG Stacker Towers</a></li>
+              <li><a href="/machinery/hydra-industrial-laundry-machinery" class="hover:text-white transition-colors">Hydra Barrier Washers</a></li>
+              <li><a href="/steam-press-machines" class="hover:text-white transition-colors">Steam Press Model Alpha</a></li>
+              <li><a href="/garment-finishing" class="hover:text-white transition-colors">Flatwork Ironers</a></li>
+              <li><a href="/price-list" class="text-blue-400 font-semibold hover:text-blue-300 transition-colors">Price List & Specifications &rarr;</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Solutions & Setup -->
+          <div>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-neutral-300 mb-4">Setup & Solutions</h4>
+            <ul class="space-y-2 text-sm text-neutral-400">
+              <li><a href="/setup" class="hover:text-white transition-colors">Turnkey Laundry Setup</a></li>
+              <li><a href="/industries" class="hover:text-white transition-colors">Hotel & Hospital Laundries</a></li>
+              <li><a href="/industries" class="hover:text-white transition-colors">Commercial Laundromats</a></li>
+              <li><a href="/industries" class="hover:text-white transition-colors">Garment Exporters</a></li>
+              <li><a href="/service-support" class="hover:text-white transition-colors">Spares & Service Depots</a></li>
+              <li><a href="/why-us" class="hover:text-white transition-colors">Why Choose Gartech</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Quick RFQ -->
+          <div>
+            <h4 class="font-bold text-xs uppercase tracking-wider text-neutral-300 mb-4">Quick Quotation</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mb-4">
+              Need technical sizing, capacity planning, or instant machine pricing?
+            </p>
+            <a href="/contact" class="block w-full py-2.5 px-4 text-center rounded-xl bg-white text-zinc-950 font-bold text-xs hover:bg-neutral-200 transition-all mb-2">
+              Request Price Quote
+            </a>
+            <a href="/price-list" class="block w-full py-2 px-4 text-center rounded-xl bg-zinc-900 border border-zinc-800 text-neutral-300 text-xs font-semibold hover:text-white transition-all">
+              Download Spec Sheet
+            </a>
+          </div>
+
+        </div>
+
+        <div class="border-t border-zinc-900 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+          <p>&copy; 2026 Gartech Global Systems. All rights reserved. Registered Indian Manufacturer.</p>
+          <p class="text-neutral-400">ISO 9001:2015 Certified &middot; Industrial Grade Stainless Steel Construction</p>
         </div>
       </div>
     </footer>
 
-  </body>
-  <script>
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    let isOpen = false;
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+      function setupMobileMenu() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (!btn || !menu) return;
 
-    btn.addEventListener('click', () => {
-      isOpen = !isOpen;
-      if (isOpen) {
-        menu.classList.remove('translate-x-full');
-        btn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
-      } else {
-        menu.classList.add('translate-x-full');
-        btn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+        let isOpen = false;
+
+        const toggle = () => {
+          isOpen = !isOpen;
+          if (isOpen) {
+            menu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+            menu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            btn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+          } else {
+            menu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+            menu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            btn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+          }
+        };
+
+        btn.onclick = toggle;
+
+        // Close when clicking any link
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (isOpen) toggle();
+          });
+        });
       }
-    });
-  </script>
+
+      setupMobileMenu();
+      document.addEventListener('astro:page-load', setupMobileMenu);
+    </script>
+  </body>
 </html>
