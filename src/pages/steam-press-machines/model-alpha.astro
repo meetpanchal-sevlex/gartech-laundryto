@@ -7,7 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  "name": "Industrial Steam Press Machine [Model Name]",
+  "name": "Industrial Steam Press Machine Model Alpha",
   "description": "Heavy-duty industrial steam press machine for commercial laundries, hotels, and garment manufacturers.",
   "brand": {
     "@type": "Brand",
@@ -15,12 +15,12 @@ const schema = {
   }
 };
 ---
-<Layout title="Industrial Steam Press Machine | Gartech Global" description="Heavy-duty industrial steam press for commercial laundries and hotels. Engineered for high-volume garment finishing with unmatched ROI.">
+<Layout title="Steam Press Model Alpha | Industrial Steam Press | Gartech Global" description="Heavy-duty industrial steam press Model Alpha for commercial laundries and hotels. Engineered for high-volume garment finishing with unmatched ROI.">
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
-  <!-- HERO SECTION: Product Overview -->
-  <section class="w-full bg-zinc-950 text-white px-8 md:px-12 lg:px-16 xl:px-20 pt-24 pb-20 border-b border-white/10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+  <!-- HERO SECTION: Model Alpha -->
+  <section class="w-full bg-zinc-950 text-white px-4 sm:px-6 lg:px-8 py-16 md:py-24 border-b border-zinc-800 industrial-grid-dark">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       <div class="flex flex-col items-start">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-6">
           <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
@@ -28,7 +28,7 @@ const schema = {
         </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
           Industrial Steam Press<br/>
-          <span class="text-neutral-500">[Model Name]</span>
+          <span class="text-neutral-500">Model Alpha</span>
         </h1>
         <p class="text-lg text-neutral-400 mb-8 leading-relaxed max-w-lg">
           The ultimate finishing solution for high-volume laundries. Engineered to deliver crisp, professional garment finishing while significantly reducing operator fatigue and utility consumption.

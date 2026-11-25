@@ -1,67 +1,65 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
+const steps = [
+  { num: "01", title: "Volume & Linen Audit", desc: "We calculate your exact daily KG processing load, peak occupancy surges, and shift duration." },
+  { num: "02", title: "Equipment Sizing Matrix", desc: "Balanced washer-to-dryer ratios (typically 1:1.25) plus flatwork and pressing throughput matching." },
+  { num: "03", title: "CAD Utility Blueprints", desc: "Detailed architectural drawings for steam headers, compressed air, 3-phase MCC panels, and floor drains." },
+  { num: "04", title: "Turnkey Commissioning", desc: "Factory dispatch from Gujarat, rigging, 72-hour wet testing, and on-site staff training." }
+];
 ---
-<Layout title="Commercial Laundry Setup | Planning Your Laundry Business | Gartech Global" description="Planning a commercial laundry? Learn what machinery you need based on your daily volume, space, and business type. Gartech Global guides you from small to industrial laundry setup.">
+<Layout title="Turnkey Commercial Laundry Setup & CAD Planning | Gartech Global" description="Complete turnkey commercial laundry setup consulting: capacity sizing, CAD utility drawings, equipment supply, and commissioning across India.">
 
-  <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-    <div class="max-w-3xl mb-14">
-      <a href="/" class="inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-zinc-950 transition-colors mb-8">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Home
-      </a>
-      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Planning a Commercial Laundry?</h1>
-      <p class="text-lg text-neutral-500 leading-relaxed">Starting a laundry business requires proper machinery planning. The right setup depends on multiple factors — and getting it right from the start saves significant time and cost.</p>
+  <!-- DARK HERO -->
+  <section class="bg-zinc-950 text-white py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-zinc-800 industrial-grid-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 mb-6">
+        <a href="/" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <span class="text-emerald-400">TURNKEY LAUNDRY SETUP</span>
+      </div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        End-to-End Facility Engineering
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Turnkey Commercial Laundry Setup</h1>
+      <p class="text-neutral-400 text-base md:text-lg max-w-2xl leading-relaxed mb-8">
+        Building a new hotel laundry, hospital central plant, or commercial laundromat? Gartech handles everything from CAD utility blueprints to final wet commissioning.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact?category=setup" class="px-7 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-200 transition-all">Request Turnkey Feasibility</a>
+        <a href="/price-list" class="px-7 py-3.5 text-sm font-semibold text-white bg-white/10 border border-white/15 rounded-full hover:bg-white/15 transition-all">View Equipment Pricing</a>
+      </div>
     </div>
+  </section>
 
-    <!-- Planning Factors -->
-    <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow p-10 mb-10">
-      <h2 class="text-2xl font-bold tracking-tight mb-6">What Determines Your Laundry Setup?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {[
-          { label: "Daily Laundry Volume", desc: "Total weight of laundry processed per day." },
-          { label: "Textile Type", desc: "Garments, linens, towels, uniforms — each needs different machines." },
-          { label: "Number of Customers", desc: "Peak and average customer load drives machine capacity." },
-          { label: "Available Space", desc: "Floor area available for machine installation and workflow." },
-          { label: "Operating Hours", desc: "Single shift or 24/7 operation changes machine requirements." },
-          { label: "Labour", desc: "Automated or semi-automated machines based on staff availability." },
-          { label: "Utility Infrastructure", desc: "Power supply, water connection and drainage capacity." },
-          { label: "Finishing Requirements", desc: "Whether steam pressing and garment finishing is needed." },
-          { label: "Future Expansion", desc: "Room to scale capacity as the business grows." },
-        ].map(item => (
-          <div class="p-5 bg-neutral-50 rounded-2xl border border-neutral-200/60">
-            <p class="font-semibold text-sm text-zinc-950 mb-1">{item.label}</p>
-            <p class="text-neutral-500 text-sm">{item.desc}</p>
+  <!-- 4-STEP SETUP WORKFLOW -->
+  <section class="w-full py-16 bg-[#EFF1F5] industrial-grid border-b border-neutral-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {steps.map((st) => (
+          <div class="bg-white rounded-2xl border-t-4 border-t-emerald-600 border-x border-b border-neutral-200 p-7 shadow-md">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-zinc-950 text-white font-mono font-bold text-sm mb-4">{st.num}</span>
+            <h2 class="text-lg font-black text-zinc-950 mb-2">{st.title}</h2>
+            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">{st.desc}</p>
           </div>
         ))}
       </div>
-    </div>
 
-    <!-- Capacity Tiers -->
-    <div class="mb-10">
-      <h2 class="text-2xl font-bold tracking-tight mb-6">From Small to Industrial Laundry</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {[
-          { range: "10–15 KG", label: "Compact Commercial", desc: "Small guesthouses, boutique dry cleaners and small laundry businesses.", color: "bg-blue-50 border-blue-100 text-blue-700" },
-          { range: "20–30 KG", label: "Growing Commercial", desc: "Mid-size hotels, commercial laundries and dry cleaning shops.", color: "bg-neutral-100 border-neutral-200/60 text-neutral-700" },
-          { range: "50–60 KG", label: "High-Volume Laundry", desc: "Large hotels, hospitals and high-volume commercial laundries.", color: "bg-amber-50 border-amber-100 text-amber-700" },
-          { range: "100–215 KG", label: "Industrial Scale", desc: "Institutional laundries, garment factories and industrial laundry facilities.", color: "bg-zinc-950 border-zinc-800 text-white" },
-        ].map(tier => (
-          <div class={`rounded-3xl border p-8 ${tier.range === "100–215 KG" ? "bg-zinc-950 border-zinc-800 text-white" : "bg-white border-neutral-200/80 card-shadow"}`}>
-            <p class={`text-3xl font-bold tracking-tight mb-2 ${tier.range === "100–215 KG" ? "text-white" : "text-zinc-950"}`}>{tier.range}</p>
-            <p class={`text-sm font-semibold mb-3 ${tier.range === "100–215 KG" ? "text-neutral-300" : "text-neutral-700"}`}>{tier.label}</p>
-            <p class={`text-sm leading-relaxed ${tier.range === "100–215 KG" ? "text-neutral-400" : "text-neutral-500"}`}>{tier.desc}</p>
-          </div>
-        ))}
+      <!-- Utility Checklist Box -->
+      <div class="bg-white rounded-2xl border-2 border-neutral-300 p-8 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-mono text-xs font-bold border border-blue-200">ARCHITECTURAL SUPPORT</span>
+          <h3 class="text-2xl font-black text-zinc-950 mt-3 mb-3">What Our Engineering Drawings Cover</h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">We coordinate directly with your MEP consultants and architects before civil work begins—preventing costly re-piping or drainage mistakes.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono font-semibold text-zinc-800">
+          <div class="p-3.5 rounded-xl bg-neutral-100 border border-neutral-200">&bull; 3-Phase Electrical Load &amp; MCB</div>
+          <div class="p-3.5 rounded-xl bg-neutral-100 border border-neutral-200">&bull; Steam Header &amp; Condensate Trap</div>
+          <div class="p-3.5 rounded-xl bg-neutral-100 border border-neutral-200">&bull; Cold/Hot Water Pressure Sizing</div>
+          <div class="p-3.5 rounded-xl bg-neutral-100 border border-neutral-200">&bull; Floor Drain Trench &amp; Exhaust Duct</div>
+        </div>
       </div>
-    </div>
 
-    <!-- CTA -->
-    <div class="bg-zinc-950 text-white rounded-3xl p-10 md:p-14">
-      <div class="max-w-2xl">
-        <h2 class="text-2xl font-bold tracking-tight mb-3">Let Us Plan Your Laundry Setup</h2>
-        <p class="text-neutral-400 mb-8">Share your daily volume, space, and business type. Our team will recommend the exact machines you need — without overselling.</p>
-        <a href="/contact" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">Request a Free Consultation</a>
-      </div>
     </div>
   </section>
 

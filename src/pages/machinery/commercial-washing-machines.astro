@@ -1,38 +1,109 @@
 ﻿---
 import Layout from "../../layouts/Layout.astro";
-const capacities = ["20 KG", "30 KG", "50 KG", "60 KG"];
+const models = [
+  { sku: "GHW-20", cap: "20 KG", vol: "200 L", gforce: "350 G (950 RPM)", heat: "Electric / Steam", power: "2.2 kW (3 HP VFD)", price: "₹ 2,85,000*" },
+  { sku: "GHW-35", cap: "35 KG", vol: "350 L", gforce: "350 G (900 RPM)", heat: "Steam / Electric", power: "3.7 kW (5 HP VFD)", price: "₹ 3,95,000*" },
+  { sku: "GHW-60", cap: "60 KG", vol: "600 L", gforce: "320 G (820 RPM)", heat: "Steam (Boiler Fed)", power: "5.5 kW (7.5 HP VFD)", price: "₹ 5,80,000*" },
+  { sku: "GHW-100", cap: "100 KG", vol: "1,020 L", gforce: "300 G (750 RPM)", heat: "Steam", power: "11.0 kW (15 HP VFD)", price: "₹ 8,90,000*" }
+];
 ---
-<Layout title="Commercial Washing Machines | 20 to 60 KG | Gartech Global">
-  <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-    <div class="max-w-3xl mb-14">
-      <div class="flex items-center gap-2 mb-8">
-        <a href="/" class="text-sm text-neutral-500 hover:text-zinc-950">Home</a>
-        <span class="text-neutral-300">/</span>
-        <a href="/machinery" class="text-sm text-neutral-500 hover:text-zinc-950">Machinery</a>
-        <span class="text-neutral-300">/</span>
-        <span class="text-sm text-zinc-950">Commercial Washing Machines</span>
+<Layout title="Commercial Washing Machines | 20 to 120 KG | Gartech Global" description="High-extraction commercial washer-extractors from 20 KG to 100+ KG capacity engineered for 24/7 hotel, hospital, and industrial laundry duty.">
+
+  <!-- DARK HERO -->
+  <section class="bg-zinc-950 text-white py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-zinc-800 industrial-grid-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 mb-6">
+        <a href="/" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <a href="/machinery" class="hover:text-white transition-colors">MACHINERY</a>
+        <span>/</span>
+        <span class="text-blue-400">COMMERCIAL WASHING MACHINES</span>
       </div>
-      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-6">Commercial Range</div>
-      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Commercial Washing Machines</h1>
-      <p class="text-lg text-neutral-500 leading-relaxed mb-8">High-extraction commercial washer-extractors built for 24/7 operations. Available in 20 KG, 30 KG, 50 KG and 60 KG capacities for hotels, hospitals, dry cleaners and laundry businesses.</p>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-zinc-950 rounded-full hover:bg-zinc-800 transition-all hover:-translate-y-0.5">Request a Quote</a>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        GHW Series &bull; 350 G-Force Extraction
       </div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-      {capacities.map((cap) => (
-        <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:-translate-y-1 transition-all p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-4">{cap}</div>
-          <h2 class="text-2xl font-bold tracking-tight mb-3">Commercial Washer Extractor {cap}</h2>
-          <p class="text-neutral-500 mb-6">Professional commercial washing machine built for hotels, hospitals and commercial laundry operations. Contact us for full technical specifications.</p>
-          <a href="/contact" class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-950">Request Specifications &rarr;</a>
-        </div>
-      ))}
-    </div>
-    <div class="bg-zinc-950 text-white rounded-3xl p-10 md:p-14">
-      <h2 class="text-2xl font-bold tracking-tight mb-3">Choosing the Right Washing Machine?</h2>
-      <p class="text-neutral-400 mb-8">Your daily volume determines which capacity is right. Our team will guide you to the right choice.</p>
-      <a href="/contact" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all">Talk to Our Team</a>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Commercial Washing Machines</h1>
+      <p class="text-neutral-400 text-base md:text-lg max-w-2xl leading-relaxed mb-8">
+        Soft-mount and hard-mount washer-extractors fabricated in AISI 304 stainless steel. High-speed extraction removes maximum moisture before drying, slashing energy costs by up to 35%.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact?category=washers" class="px-7 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-200 transition-all">Request Price Quote</a>
+        <a href="/price-list" class="px-7 py-3.5 text-sm font-semibold text-white bg-white/10 border border-white/15 rounded-full hover:bg-white/15 transition-all">Full Price Matrix</a>
+      </div>
     </div>
   </section>
+
+  <!-- MODELS GRID & SPEC TABLE -->
+  <section class="w-full py-16 bg-[#EFF1F5] industrial-grid border-b border-neutral-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {models.map((m) => (
+          <div class="bg-white rounded-2xl border-t-4 border-t-blue-600 border-x border-b border-neutral-200 p-7 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-md text-xs font-extrabold bg-blue-50 text-blue-700 border border-blue-200">{m.cap} Capacity</span>
+                <span class="font-mono text-xs text-neutral-400 font-bold">{m.sku}</span>
+              </div>
+              <h2 class="text-2xl font-black text-zinc-950 mb-2">Gartech Hydro-Wash {m.sku}</h2>
+              <p class="text-sm text-neutral-600 mb-5">Programmable microprocessor washer-extractor with 30 customizable wash programs, chemical dosing ports, and heavy-duty inverter drive.</p>
+              <div class="bg-neutral-100/80 border border-neutral-200 rounded-xl p-4 text-xs font-mono text-neutral-700 space-y-1 mb-6">
+                <p>&bull; Drum Volume: {m.vol} (AISI 304)</p>
+                <p>&bull; Spin Extraction: {m.gforce}</p>
+                <p>&bull; Heating: {m.heat}</p>
+                <p>&bull; Motor: {m.power}</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-neutral-100">
+              <span class="font-mono font-bold text-sm text-zinc-950">Base: {m.price}</span>
+              <a href={`/contact?model=${m.sku}`} class="px-5 py-2.5 rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-blue-600 transition-colors">Get Official Quote &rarr;</a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Technical Spec Table -->
+      <div class="bg-white rounded-2xl border-2 border-neutral-300 shadow-xl overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse min-w-[700px]">
+            <thead class="bg-zinc-950 text-neutral-300 font-mono uppercase text-[10px]">
+              <tr>
+                <th class="py-4 px-4 text-white">Model</th>
+                <th class="py-4 px-4 text-white">Capacity</th>
+                <th class="py-4 px-4 text-white">Drum Vol</th>
+                <th class="py-4 px-4 text-white">G-Factor / RPM</th>
+                <th class="py-4 px-4 text-white">Heating</th>
+                <th class="py-4 px-4 text-white">Motor</th>
+                <th class="py-4 px-4 text-white text-right">Indicative Rate*</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-200">
+              {models.map((m) => (
+                <tr class="hover:bg-blue-50/50 transition-colors">
+                  <td class="py-3.5 px-4 font-bold text-zinc-950">{m.sku}</td>
+                  <td class="py-3.5 px-4 font-bold text-blue-700">{m.cap}</td>
+                  <td class="py-3.5 px-4 text-neutral-600">{m.vol}</td>
+                  <td class="py-3.5 px-4 text-neutral-600">{m.gforce}</td>
+                  <td class="py-3.5 px-4 text-neutral-600">{m.heat}</td>
+                  <td class="py-3.5 px-4 text-neutral-600">{m.power}</td>
+                  <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950">{m.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="w-full bg-zinc-950 text-white px-4 sm:px-6 lg:px-8 py-16 text-center industrial-grid-dark">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-black mb-3">Need Help Sizing Your Washer Capacity?</h2>
+      <p class="text-neutral-400 text-sm mb-6">Tell us your daily KG load and shift hours—our engineers will recommend the ideal machine combination.</p>
+      <a href="/contact?category=washers" class="inline-block px-8 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-200 transition-all">Talk to Application Engineer</a>
+    </div>
+  </section>
+
 </Layout>

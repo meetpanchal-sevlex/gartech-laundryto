@@ -1,120 +1,92 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
-import AboutCarousel from '../components/AboutCarousel.jsx';
+import LifecycleShowcase from '../components/LifecycleShowcase.astro';
 ---
-<Layout title="About Gartech Global | Commercial Laundry Machinery Supplier" description="Gartech Global is a professional laundry machinery supplier providing commercial and industrial washing machines, dryers, steam press machines and garment finishing equipment.">
+<Layout title="About Gartech Global | Commercial Laundry Machinery Manufacturer" description="Established in 1998, Gartech Global is a premier Indian manufacturer and supplier of commercial and industrial washing machines, dryers, steam presses, and turnkey laundry setups.">
 
   <!-- HERO SECTION -->
-  <section class="relative w-full px-4 sm:px-6 lg:px-8 py-24 md:py-32 overflow-hidden bg-zinc-950 text-white">
-    <!-- Abstract Background Glow -->
-    <div class="absolute inset-0 z-0 opacity-40">
-      <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/30 blur-[120px] rounded-full mix-blend-screen"></div>
-      <div class="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-indigo-600/30 blur-[120px] rounded-full mix-blend-screen"></div>
-      <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px;"></div>
+  <section class="relative w-full px-4 sm:px-6 lg:px-8 py-16 md:py-24 overflow-hidden bg-zinc-950 text-white border-b border-zinc-900 industrial-grid-dark">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full"></div>
+      <div class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-indigo-600/20 blur-[120px] rounded-full"></div>
     </div>
 
-    <div class="relative z-10 max-w-4xl mx-auto text-center fade-in-up opacity-0 translate-y-8 transition-all duration-1000">
-      <a href="/" class="inline-flex items-center gap-1.5 text-sm text-neutral-400 hover:text-white transition-colors mb-8 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Back to Hub
-      </a>
-      <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-        Engineering the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Perfect Workflow.</span>
+    <div class="relative z-10 max-w-5xl mx-auto">
+      <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 mb-6">
+        <a href="/" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <span class="text-blue-400">ABOUT GARTECH GLOBAL</span>
+      </div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-neutral-200 text-xs font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        EST. 1998 &bull; ISO 9001:2015 REGISTERED MANUFACTURER
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-6 leading-[1.08]">
+        Engineering the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Perfect Laundry Workflow.</span>
       </h1>
-      <p class="text-xl text-neutral-400 leading-relaxed max-w-3xl mx-auto">
-        Gartech Global isn't just a supplier. We are workflow architects providing industrial washing machines, dryers, steam presses, and garment-finishing equipment for facilities that demand unrelenting performance.
+      <p class="text-base sm:text-xl text-neutral-300 leading-relaxed max-w-3xl">
+        Gartech Global isn't just a machinery trader. We are workflow architects and Indian manufacturers delivering 10 KG to 215 KG washing, drying, and finishing systems engineered for 24/7 industrial reliability.
       </p>
     </div>
   </section>
 
-  <!-- THE DOMINANT BENTO GRID -->
-  <section class="w-full px-4 sm:px-6 lg:px-8 py-24 bg-[#030712]">
-    <div class="max-w-7xl mx-auto">
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[250px]">
+  <!-- METRICS & CORE PHILOSOPHY BENTO -->
+  <section class="w-full py-16 md:py-20 bg-[#EFF1F5] industrial-grid border-b border-neutral-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         
-        <!-- Massive Positioning Card -->
-        <div class="md:col-span-2 lg:col-span-2 md:row-span-2 rounded-[2rem] bg-zinc-900 border border-white/5 relative overflow-hidden group fade-in-up opacity-0 translate-y-8 transition-all duration-1000 delay-100">
-          <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-          <svg class="absolute right-0 top-0 h-full w-full opacity-20 pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0 100 C 20 0, 50 100, 100 0" fill="none" stroke="#3b82f6" stroke-width="0.5" class="animate-pulse" />
-            <path d="M0 100 C 40 50, 60 50, 100 0" fill="none" stroke="#6366f1" stroke-width="1" class="animate-[pulse_3s_infinite]" />
-          </svg>
-
-          <div class="absolute inset-0 p-10 flex flex-col justify-end">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 w-max mb-6">
-              <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
-              <span class="text-xs font-semibold text-blue-300 tracking-wide uppercase">Core Philosophy</span>
-            </div>
-            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Application-Based Engineering</h2>
-            <p class="text-lg text-neutral-400 leading-relaxed max-w-lg">
-              We reject generic catalogue lists. We analyze your specific operational constraints—washing, extraction, drying, and finishing—to architect a highly efficient, custom machinery workflow.
-            </p>
-          </div>
+        <div class="md:col-span-2 lg:col-span-2 rounded-2xl bg-white border-t-4 border-t-blue-600 border-x border-b border-neutral-200/90 p-8 shadow-md">
+          <span class="inline-block px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold font-mono uppercase mb-4">Core Philosophy</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-zinc-950 mb-3">Application-Based Engineering</h2>
+          <p class="text-sm sm:text-base text-neutral-600 leading-relaxed">
+            We reject generic one-size-fits-all catalogs. Our engineers analyze your daily linen load, fabric composition, utility constraints (steam vs electric vs gas), and floor footprint to build an end-to-end automated workflow.
+          </p>
         </div>
 
-        <div class="rounded-[2rem] bg-zinc-900 border border-white/5 p-8 flex flex-col justify-center items-center text-center relative overflow-hidden group fade-in-up opacity-0 translate-y-8 transition-all duration-1000 delay-200">
-          <div class="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <p class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-emerald-600 mb-2">215<span class="text-2xl">KG</span></p>
-          <p class="text-sm font-medium text-neutral-400 uppercase tracking-widest">Max Capacity</p>
-          <div class="absolute bottom-0 left-0 h-1 bg-emerald-500 transition-all duration-500 w-0 group-hover:w-full"></div>
+        <div class="rounded-2xl bg-white border-t-4 border-t-emerald-600 border-x border-b border-neutral-200/90 p-8 flex flex-col justify-center items-center text-center shadow-md">
+          <p class="text-5xl font-black text-emerald-600 font-mono mb-2">215<span class="text-2xl">KG</span></p>
+          <p class="text-xs font-bold text-neutral-600 uppercase tracking-widest">Max Single Unit Capacity</p>
         </div>
 
-        <div class="rounded-[2rem] bg-zinc-900 border border-white/5 p-8 flex flex-col justify-center items-center text-center relative overflow-hidden group fade-in-up opacity-0 translate-y-8 transition-all duration-1000 delay-300">
-          <div class="absolute inset-0 bg-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <p class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-amber-400 to-amber-600 mb-2">4<span class="text-4xl">+</span></p>
-          <p class="text-sm font-medium text-neutral-400 uppercase tracking-widest">Core Categories</p>
-          <div class="absolute bottom-0 left-0 h-1 bg-amber-500 transition-all duration-500 w-0 group-hover:w-full"></div>
+        <div class="rounded-2xl bg-white border-t-4 border-t-amber-500 border-x border-b border-neutral-200/90 p-8 flex flex-col justify-center items-center text-center shadow-md">
+          <p class="text-5xl font-black text-amber-500 font-mono mb-2">1,200<span class="text-3xl">+</span></p>
+          <p class="text-xs font-bold text-neutral-600 uppercase tracking-widest">Pan-India Installations</p>
         </div>
 
-        <div class="md:col-span-2 lg:col-span-2 rounded-[2rem] bg-zinc-900 border border-white/5 p-8 flex flex-col justify-center relative overflow-hidden group fade-in-up opacity-0 translate-y-8 transition-all duration-1000 delay-400">
-          <div class="absolute inset-0 bg-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="relative z-10 flex items-center gap-8">
-            <div class="w-16 h-16 rounded-full bg-indigo-500/20 flex items-center justify-center shrink-0">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="md:col-span-3 lg:col-span-4 rounded-2xl bg-white border border-neutral-200/90 p-7 shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div class="flex items-center gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-zinc-950 text-white flex items-center justify-center shrink-0">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
-              <p class="text-2xl font-bold text-white mb-1">6+ Industries Served</p>
-              <p class="text-neutral-400">Hospitals, Hotels, Dry Cleaners, Garment Manufacturers, Institutional Laundries, and heavy-duty industrial processing plants.</p>
+              <h3 class="text-xl font-extrabold text-zinc-950">GIDC Industrial Manufacturing &amp; Pan-India Service</h3>
+              <p class="text-sm text-neutral-600 mt-1">Plot No. 48, GIDC Industrial Estate, Phase II, Gujarat &bull; Direct 24-48 hr engineer dispatch to all major Indian cities.</p>
             </div>
           </div>
+          <a href="/contact" class="px-6 py-3 rounded-full bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shrink-0">
+            Schedule Plant Visit &rarr;
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- AUTO-MOVING COMMAND CENTER -->
-  <section class="w-full px-4 sm:px-6 lg:px-8 py-24 bg-[#030712] relative border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <div class="mb-16 fade-in-up opacity-0 translate-y-8 transition-all duration-1000 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">Machinery Support <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Beyond the Sale</span></h2>
-        <p class="text-lg text-neutral-400 max-w-2xl mx-auto">A machine is only as good as the infrastructure supporting it. We deploy rapid technical assistance and comprehensive operational training to keep your lines moving.</p>
+  <!-- LIFECYCLE SUPPORT SHOWCASE (Zero-JS Framework Overhead) -->
+  <section class="w-full py-16 md:py-24 bg-[#E6E9EE] dot-grid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 text-center max-w-2xl mx-auto">
+        <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-800 text-xs font-bold font-mono uppercase">Support Infrastructure</span>
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-zinc-950 mt-2 mb-3">
+          Machinery Support Beyond the Sale
+        </h2>
+        <p class="text-neutral-600 text-sm sm:text-base">
+          Explore our 4-stage lifecycle protocol from civil installation to preventive spares maintenance.
+        </p>
       </div>
 
-      <div class="fade-in-up opacity-0 translate-y-8 transition-all duration-1000" style="transition-delay: 200ms">
-        <AboutCarousel client:load />
-      </div>
+      <LifecycleShowcase />
     </div>
   </section>
-
-  <!-- Observer Script for Fade-ins -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove('opacity-0', 'translate-y-8');
-            entry.target.classList.add('opacity-100', 'translate-y-0');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.fade-in-up').forEach((el) => {
-        observer.observe(el);
-      });
-    });
-  </script>
 
 </Layout>

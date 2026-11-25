@@ -1,37 +1,55 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
+const pillars = [
+  { num: "01", title: "Legacy of Trust Since 1998", desc: "Over 25 years of specialized experience manufacturing commercial laundry equipment tailored precisely to Indian water hardness and voltage conditions." },
+  { num: "02", title: "AISI 304 Heavy-Duty Build", desc: "Every wash cylinder, shaft, and casing is fabricated with certified grade 304 stainless steel, heavy spherical roller bearings, and Viton seals." },
+  { num: "03", title: "Pan-India Logistics & Service", desc: "Strategic service depots across Gujarat, Maharashtra, Delhi NCR, Karnataka, Tamil Nadu, and Telangana with guaranteed 24-48 hr engineer dispatch." },
+  { num: "04", title: "10,000+ Ready Spares in Stock", desc: "We maintain an exhaustive warehouse of genuine inverters, motors, heating elements, drain valves, and door gaskets for same-day dispatch." },
+  { num: "05", title: "Turnkey CAD Utility Planning", desc: "From civil foundation drawings to steam pipe sizing, compressed air routing, and electrical MCC panels, we deliver full CAD layouts." },
+  { num: "06", title: "ISO 9001:2015 Quality Tested", desc: "Every machine undergoes a rigorous 72-hour continuous wet test cycle at our Gujarat plant before dispatch, ensuring vibration-free balance." }
+];
 ---
-<Layout title="Why Choose Gartech Global | Laundry Machinery Partner" description="Why businesses choose Gartech Global for their commercial and industrial laundry machinery needs. Wide capacity range, multiple categories, application-based approach and complete support.">
+<Layout title="Why Choose Gartech Global | Industrial Laundry Partner" description="Why Indian hotels, hospitals, and laundromats choose Gartech Global: 25+ years legacy, AISI 304 construction, 10,000+ ready spares, and pan-India service.">
 
-  <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-    <div class="max-w-3xl mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Why Choose Gartech Global?</h1>
-      <p class="text-lg text-neutral-500 leading-relaxed">A Machinery Partner for Professional Laundry Businesses</p>
+  <!-- DARK HERO -->
+  <section class="bg-zinc-950 text-white py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-zinc-800 industrial-grid-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 mb-6">
+        <a href="/" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <span class="text-blue-400">WHY GARTECH GLOBAL</span>
+      </div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        The Engineering Benchmark
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Why Choose Gartech Global?</h1>
+      <p class="text-neutral-400 text-base md:text-lg max-w-2xl leading-relaxed">
+        Engineered for nonstop heavy duty, immediate spares fulfillment, and zero plant downtime.
+      </p>
     </div>
+  </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-      {[
-        { title: "Wide Capacity Range", desc: "From 10 KG compact commercial equipment to 215 KG heavy industrial machinery. Whatever the scale of your operation, we have the right machine.", badge: "Range" },
-        { title: "Multiple Machinery Categories", desc: "Washing, drying, stackers, steam pressing and industrial laundry equipment — all sourced and supported by one specialist supplier.", badge: "Range" },
-        { title: "Application-Based Approach", desc: "We don't just list machines. We recommend solutions based on your actual operation — daily volume, textile type, workflow and business type.", badge: "Approach" },
-        { title: "Commercial & Industrial Expertise", desc: "Solutions for businesses ranging from small commercial laundries and boutique dry cleaners to large institutional and industrial facilities.", badge: "Expertise" },
-        { title: "Complete Laundry Thinking", desc: "We consider how different machines work together as a complete laundry workflow — not just individual equipment in isolation.", badge: "Approach" },
-        { title: "After-Sales Support", desc: "Installation, commissioning, operator guidance, preventive maintenance guidance, technical assistance and spare parts assistance.", badge: "Support" },
-      ].map(item => (
-        <div class="bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover hover:-translate-y-0.5 transition-all duration-300 p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-5">
-            {item.badge}
+  <!-- 6 PILLARS -->
+  <section class="w-full py-16 bg-[#EFF1F5] industrial-grid border-b border-neutral-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {pillars.map((p) => (
+          <div class="p-7 rounded-2xl bg-white border-t-4 border-t-blue-600 border-x border-b border-neutral-200 shadow-md hover:shadow-xl transition-all">
+            <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4">{p.num}</div>
+            <h2 class="text-lg font-extrabold text-zinc-950 mb-2">{p.title}</h2>
+            <p class="text-neutral-600 text-sm leading-relaxed">{p.desc}</p>
           </div>
-          <h2 class="text-xl font-bold tracking-tight mb-3">{item.title}</h2>
-          <p class="text-neutral-500 leading-relaxed">{item.desc}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
+  </section>
 
-    <div class="bg-zinc-950 text-white rounded-3xl p-10 md:p-14 text-center">
-      <h2 class="text-2xl font-bold tracking-tight mb-3">Ready to work with Gartech Global?</h2>
-      <p class="text-neutral-400 mb-8">Tell us your laundry requirement and our team will get back to you within 24 hours.</p>
-      <a href="/contact" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all hover:-translate-y-0.5 duration-150">Request a Quote</a>
+  <!-- CTA -->
+  <section class="w-full bg-zinc-950 text-white px-4 sm:px-6 lg:px-8 py-16 text-center industrial-grid-dark">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-black mb-3">Ready to Partner with Gartech Global?</h2>
+      <p class="text-neutral-400 text-sm mb-6">Tell us your laundry requirement and our engineering team will respond within 24 hours.</p>
+      <a href="/contact" class="inline-block px-8 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-200 transition-all">Request a Quote</a>
     </div>
   </section>
 

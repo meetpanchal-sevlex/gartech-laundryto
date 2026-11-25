@@ -1,104 +1,138 @@
 ﻿---
 import Layout from '../../layouts/Layout.astro';
 ---
-<Layout title="Laundry Machinery | Commercial & Industrial Machines | Gartech Global" description="Complete range of commercial and industrial laundry machinery. LG commercial stackers, washing machines, dryers and Hydra industrial laundry equipment from Gartech Global.">
+<Layout title="Laundry Machinery Range | Commercial & Industrial | Gartech Global" description="Complete range of commercial and industrial laundry machinery. LG commercial stackers, washing machines, dryers and Hydra industrial laundry equipment from Gartech Global.">
 
-  <section class="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
-    <div class="max-w-3xl mb-14">
-      <a href="/" class="inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-zinc-950 transition-colors mb-8">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Home
-      </a>
-      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-6">
-        Full Range
+  <!-- DARK HERO -->
+  <section class="bg-zinc-950 text-white py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-zinc-800 industrial-grid-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center gap-2 text-xs font-mono text-neutral-400 mb-6">
+        <a href="/" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <span class="text-blue-400">LAUNDRY MACHINERY</span>
       </div>
-      <h1 class="text-4xl md:text-5xl font-bold tracking-[-0.03em] leading-[1.1] mb-4">Laundry Machinery</h1>
-      <p class="text-lg text-neutral-500 leading-relaxed">The complete Gartech Global machinery range — from compact commercial stackers to large-scale industrial laundry equipment.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <!-- LG Stackers -->
-      <a href="/machinery/lg-commercial-stackers" class="group bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-        <div class="p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 border border-blue-100 text-blue-700 mb-5">LG Commercial</div>
-          <h2 class="text-2xl font-bold tracking-tight mb-3">LG Commercial Stackers</h2>
-          <p class="text-neutral-500 mb-5 leading-relaxed">Space-saving stacked washer-dryer combinations designed for compact commercial operations. Reliable, energy-efficient and built for daily commercial use.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            {["10 KG", "15 KG"].map(cap => (
-              <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded-full border border-neutral-200/60">{cap}</span>
-            ))}
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+            10 KG to 215 KG Capacity Range
           </div>
-          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">
-            View LG Stackers <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
+            Industrial &amp; Commercial Laundry Machinery
+          </h1>
+          <p class="text-neutral-400 text-base md:text-lg max-w-2xl leading-relaxed">
+            AISI 304 stainless steel machinery engineered for continuous 24/7 operation across hotels, hospitals, laundromats, and garment exporters.
+          </p>
         </div>
-      </a>
-
-      <!-- Washing Machines -->
-      <a href="/machinery/commercial-washing-machines" class="group bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-        <div class="p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-5">Commercial</div>
-          <h2 class="text-2xl font-bold tracking-tight mb-3">Commercial Washing Machines</h2>
-          <p class="text-neutral-500 mb-5 leading-relaxed">High-extraction commercial washer-extractors built for 24/7 operations. Suitable for hotels, hospitals, dry cleaners and laundry businesses of all sizes.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            {["20 KG", "30 KG", "50 KG", "60 KG"].map(cap => (
-              <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded-full border border-neutral-200/60">{cap}</span>
-            ))}
-          </div>
-          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">
-            View Washers <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
+        <div class="flex flex-wrap gap-3 shrink-0">
+          <a href="/price-list" class="px-6 py-3 rounded-full bg-blue-600 text-white text-xs font-bold hover:bg-blue-500 transition-colors">
+            View Price List &amp; Specs &rarr;
+          </a>
+          <a href="/contact" class="px-6 py-3 rounded-full bg-white text-zinc-950 text-xs font-bold hover:bg-neutral-200 transition-colors">
+            Request Quote
+          </a>
         </div>
-      </a>
-
-      <!-- Dryers -->
-      <a href="/machinery/commercial-laundry-dryers" class="group bg-white rounded-3xl border border-neutral-200/80 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-        <div class="p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-neutral-100 border border-neutral-200/60 text-neutral-700 mb-5">Commercial</div>
-          <h2 class="text-2xl font-bold tracking-tight mb-3">Commercial Laundry Dryers</h2>
-          <p class="text-neutral-500 mb-5 leading-relaxed">Energy-efficient tumble dryers for high-volume commercial operations. Matched dryer capacities to pair with your washing machines for an efficient laundry workflow.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            {["20 KG", "30 KG", "50 KG", "60 KG"].map(cap => (
-              <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-medium rounded-full border border-neutral-200/60">{cap}</span>
-            ))}
-          </div>
-          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-zinc-950 group-hover:gap-2.5 transition-all">
-            View Dryers <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </div>
-      </a>
-
-      <!-- Hydra Industrial -->
-      <a href="/machinery/hydra-industrial-laundry-machinery" class="group bg-zinc-950 text-white rounded-3xl border border-zinc-800 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-        <div class="p-8">
-          <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 border border-white/10 text-neutral-300 mb-5">Industrial Scale</div>
-          <h2 class="text-2xl font-bold tracking-tight mb-3">Hydra Industrial Laundry</h2>
-          <p class="text-neutral-400 mb-5 leading-relaxed">Heavy-duty industrial laundry machinery for large-scale operations. Designed for institutional laundries, garment manufacturers and high-volume commercial facilities.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            {["30 KG", "50 KG", "100 KG", "150 KG", "215 KG"].map(cap => (
-              <span class="px-3 py-1 bg-white/10 text-neutral-300 text-xs font-medium rounded-full border border-white/10">{cap}</span>
-            ))}
-          </div>
-          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-white group-hover:gap-2.5 transition-all">
-            View Industrial Range <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </div>
-      </a>
-
+      </div>
     </div>
   </section>
 
-  <!-- Setup Guide CTA -->
-  <section class="max-w-7xl mx-auto px-4 md:px-8 pb-20">
-    <div class="bg-neutral-50 border border-neutral-200/80 rounded-3xl p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-      <div>
-        <h2 class="text-2xl font-bold tracking-tight mb-2">Not sure which machines you need?</h2>
-        <p class="text-neutral-500">Our team will help you plan the right laundry setup based on your daily volume, space, and business requirements.</p>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-3 shrink-0">
-        <a href="/setup" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-zinc-950 bg-white border border-neutral-200 rounded-full hover:border-neutral-300 transition-all hover:-translate-y-0.5 duration-150">Laundry Setup Guide</a>
-        <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-zinc-950 rounded-full hover:bg-zinc-800 transition-all hover:-translate-y-0.5 duration-150">Request a Quote</a>
+  <!-- CATEGORIES GRID -->
+  <section class="w-full py-16 bg-[#EFF1F5] industrial-grid border-b border-neutral-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Commercial Washers -->
+        <div class="bg-white rounded-2xl border-t-4 border-t-blue-600 border-x border-b border-neutral-200 p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">20 KG to 120 KG</span>
+              <span class="font-mono text-xs text-neutral-400 font-bold">GHW SERIES</span>
+            </div>
+            <h2 class="text-2xl font-black text-zinc-950 mb-3">Commercial Washing Machines</h2>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+              High-extraction washer-extractors with up to 350 G-force spin speeds, cutting drying times and energy bills by up to 35%.
+            </p>
+            <div class="bg-neutral-100/80 border border-neutral-200 rounded-xl p-4 text-xs font-mono text-neutral-700 space-y-1 mb-6">
+              <p>&bull; Heating: Steam / Electric</p>
+              <p>&bull; Control: Programmable Microprocessor (30 cycles)</p>
+              <p>&bull; Construction: Full AISI 304 Stainless Drum</p>
+            </div>
+          </div>
+          <div class="flex gap-3 pt-4 border-t border-neutral-100">
+            <a href="/machinery/commercial-washing-machines" class="flex-1 py-3 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">Explore Washers</a>
+            <a href="/contact?category=washers" class="flex-1 py-3 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">Get Quote</a>
+          </div>
+        </div>
+
+        <!-- Commercial Dryers -->
+        <div class="bg-white rounded-2xl border-t-4 border-t-amber-500 border-x border-b border-neutral-200 p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200">15 KG to 100 KG</span>
+              <span class="font-mono text-xs text-neutral-400 font-bold">GAD SERIES</span>
+            </div>
+            <h2 class="text-2xl font-black text-zinc-950 mb-3">Industrial Tumble Dryers</h2>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+              Axial and radial airflow reversing dryers built for high-volume linen turnover without fabric tangling or heat scorching.
+            </p>
+            <div class="bg-neutral-100/80 border border-neutral-200 rounded-xl p-4 text-xs font-mono text-neutral-700 space-y-1 mb-6">
+              <p>&bull; Heating: Steam / Piped Gas / Electric</p>
+              <p>&bull; Drum: Auto-Reversing Perforated Stainless</p>
+              <p>&bull; Safety: Over-temp &amp; Lint-door interlocks</p>
+            </div>
+          </div>
+          <div class="flex gap-3 pt-4 border-t border-neutral-100">
+            <a href="/machinery/commercial-laundry-dryers" class="flex-1 py-3 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">Explore Dryers</a>
+            <a href="/contact?category=dryers" class="flex-1 py-3 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">Get Quote</a>
+          </div>
+        </div>
+
+        <!-- LG Stackers -->
+        <div class="bg-white rounded-2xl border-t-4 border-t-indigo-600 border-x border-b border-neutral-200 p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">10 KG &bull; 15 KG</span>
+              <span class="font-mono text-xs text-neutral-400 font-bold">LG COMMERCIAL</span>
+            </div>
+            <h2 class="text-2xl font-black text-zinc-950 mb-3">LG Commercial Stackers</h2>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+              Space-saving vertical washer-dryer towers featuring Inverter DirectDrive motors, ideal for urban laundromats, hostels, and boutique resorts.
+            </p>
+            <div class="bg-neutral-100/80 border border-neutral-200 rounded-xl p-4 text-xs font-mono text-neutral-700 space-y-1 mb-6">
+              <p>&bull; Power: Single Phase 230V Ready</p>
+              <p>&bull; Payment: UPI / Coin / Card Compatible</p>
+              <p>&bull; Noise: Ultra-Quiet &lt; 58 dB</p>
+            </div>
+          </div>
+          <div class="flex gap-3 pt-4 border-t border-neutral-100">
+            <a href="/machinery/lg-commercial-stackers" class="flex-1 py-3 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">Explore Stackers</a>
+            <a href="/contact?category=stackers" class="flex-1 py-3 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">Get Quote</a>
+          </div>
+        </div>
+
+        <!-- Hydra Barrier -->
+        <div class="bg-white rounded-2xl border-t-4 border-t-emerald-600 border-x border-b border-neutral-200 p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">60 KG to 215 KG</span>
+              <span class="font-mono text-xs text-neutral-400 font-bold">HYDRA BARRIER</span>
+            </div>
+            <h2 class="text-2xl font-black text-zinc-950 mb-3">Hydra Industrial Barrier Washers</h2>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+              Dual-door hygienic pass-through systems engineered for sterile hospital linen, pharmaceutical cleanrooms, and mass institutional plants.
+            </p>
+            <div class="bg-neutral-100/80 border border-neutral-200 rounded-xl p-4 text-xs font-mono text-neutral-700 space-y-1 mb-6">
+              <p>&bull; Isolation: Dirty-side load / Clean-side unload</p>
+              <p>&bull; Compliance: WHO / NABH Hygiene Standards</p>
+              <p>&bull; Unload: Pneumatic Auto-Tilting Option</p>
+            </div>
+          </div>
+          <div class="flex gap-3 pt-4 border-t border-neutral-100">
+            <a href="/machinery/hydra-industrial-laundry-machinery" class="flex-1 py-3 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">Explore Hydra</a>
+            <a href="/contact?category=hydra" class="flex-1 py-3 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">Get Quote</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
