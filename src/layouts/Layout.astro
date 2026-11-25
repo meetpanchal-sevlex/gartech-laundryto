@@ -23,49 +23,8 @@ const { title, description = "Gartech Global - India's trusted manufacturer & su
   </head>
   <body class="bg-[#EFF1F5] text-zinc-950 antialiased flex flex-col min-h-screen">
 
-    <!-- HEADER & TOP INDUSTRIAL BAR -->
+    <!-- HEADER -->
     <header class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-200/80 shadow-xs">
-      
-      <!-- TOP CONTACT & TRUST BAR (Shaikh Petroleum Style) -->
-      <div class="hidden lg:block bg-zinc-950 text-neutral-300 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-          
-          <!-- Left: Direct Contact Hotline -->
-          <div class="flex items-center gap-6">
-            <span class="flex items-center gap-2 font-medium text-white">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Pan-India Sales Hotline:
-            </span>
-            <a href="tel:+919898029292" class="hover:text-white transition-colors flex items-center gap-1.5 font-semibold text-neutral-200">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              +91 98980 29292
-            </a>
-            <a href="mailto:sales@gartechglobal.com" class="hover:text-white transition-colors flex items-center gap-1.5 text-neutral-400">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              sales@gartechglobal.com
-            </a>
-            <span class="text-neutral-500 hidden xl:inline">|</span>
-            <span class="text-neutral-400 hidden xl:inline">
-              Plant: GIDC Industrial Estate, Gujarat &bull; Pan-India Dispatch
-            </span>
-          </div>
-
-          <!-- Right: Trust Badges & Direct WhatsApp -->
-          <div class="flex items-center gap-5">
-            <span class="text-neutral-400 font-mono text-[11px]">
-              EST. 1998 &bull; 25+ YRS EXCELLENCE
-            </span>
-            <span class="px-2 py-0.5 rounded-sm bg-zinc-800 text-neutral-300 font-mono text-[10px] tracking-wider uppercase border border-zinc-700">
-              ISO 9001:2015
-            </span>
-            <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20I%20am%20interested%20in%20industrial%20laundry%20machinery.%20Please%20share%20the%20catalogue%20and%20pricing." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 transition-colors">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.5 2 2.012 6.48 2.012 12c0 2.074.634 4.004 1.722 5.613L2.004 22l4.542-1.685A9.957 9.957 0 0 0 12.031 22c5.522 0 10.012-4.48 10.012-10S17.553 2 12.031 2zm5.795 14.282c-.244.686-1.42 1.312-1.956 1.393-.536.082-1.222.115-1.983-.127-.463-.146-1.058-.344-1.825-.678-3.21-1.393-5.297-4.664-5.457-4.88-.16-.217-1.304-1.737-1.304-3.314s.827-2.353 1.12-2.674c.294-.321.642-.401.856-.401.214 0 .428.002.615.011.198.01.463-.075.723.551.268.643.916 2.234.996 2.396.08.16.134.348.027.562-.107.214-.16.348-.321.536-.16.187-.337.417-.481.56-.16.16-.328.334-.141.654.187.32.83 1.369 1.782 2.218 1.224 1.092 2.256 1.43 2.577 1.59.32.16.508.134.695-.08.188-.215.803-.936 1.017-1.257.214-.321.428-.268.722-.16.294.107 1.872.883 2.193 1.044.321.16.536.241.615.375.08.134.08.776-.164 1.462z"/></svg>
-              WhatsApp Support
-            </a>
-          </div>
-
-        </div>
-      </div>
 
       <!-- MAIN NAVIGATION BAR -->
       <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
@@ -276,9 +235,21 @@ const { title, description = "Gartech Global - India's trusted manufacturer & su
     </header>
 
     <!-- CONTENT WRAPPER (Accounts for fixed header height) -->
-    <main class="flex-1 pt-16 lg:pt-28">
+    <main class="flex-1 pt-16 md:pt-20">
       <slot />
     </main>
+
+    <!-- FLOATING DESKTOP WHATSAPP BUTTON -->
+    <a
+      href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20please%20share%20the%20machinery%20catalogue%20and%20price%20quotation."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="hidden lg:flex fixed bottom-6 right-6 z-50 items-center gap-2.5 px-4 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-[0_8px_30px_rgba(5,150,105,0.45)] hover:shadow-[0_12px_36px_rgba(5,150,105,0.6)] hover:-translate-y-0.5 transition-all duration-200 group"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="shrink-0"><path d="M12.031 2C6.5 2 2.012 6.48 2.012 12c0 2.074.634 4.004 1.722 5.613L2.004 22l4.542-1.685A9.957 9.957 0 0 0 12.031 22c5.522 0 10.012-4.48 10.012-10S17.553 2 12.031 2zm5.795 14.282c-.244.686-1.42 1.312-1.956 1.393-.536.082-1.222.115-1.983-.127-.463-.146-1.058-.344-1.825-.678-3.21-1.393-5.297-4.664-5.457-4.88-.16-.217-1.304-1.737-1.304-3.314s.827-2.353 1.12-2.674c.294-.321.642-.401.856-.401.214 0 .428.002.615.011.198.01.463-.075.723.551.268.643.916 2.234.996 2.396.08.16.134.348.027.562-.107.214-.16.348-.321.536-.16.187-.337.417-.481.56-.16.16-.328.334-.141.654.187.32.83 1.369 1.782 2.218 1.224 1.092 2.256 1.43 2.577 1.59.32.16.508.134.695-.08.188-.215.803-.936 1.017-1.257.214-.321.428-.268.722-.16.294.107 1.872.883 2.193 1.044.321.16.536.241.615.375.08.134.08.776-.164 1.462z"/></svg>
+      <span>WhatsApp</span>
+    </a>
 
     <!-- FLOATING MOBILE BOTTOM CONNECT BAR (Shaikh Petroleum Quick Action Standard) -->
     <div class="lg:hidden fixed bottom-4 inset-x-4 z-40 flex items-center gap-2 p-1.5 bg-zinc-950/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/10">
