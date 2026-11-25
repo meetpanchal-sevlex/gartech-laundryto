@@ -5,13 +5,13 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
 
 <Layout title="Gartech Global - Industrial Laundry Machinery & Commercial Washing Systems">
 
-  <!-- HERO SECTION -->
-  <section class="relative w-full pt-16 pb-12 md:py-24 flex items-center overflow-hidden bg-zinc-950 border-b border-zinc-900">
+  <!-- HERO SECTION (Deep Industrial Carbon + Subtle CAD Grid) -->
+  <section class="relative w-full pt-16 pb-16 md:py-28 flex items-center overflow-hidden bg-zinc-950 border-b border-zinc-900 industrial-grid-dark">
     <!-- Atmospheric background elements -->
     <div class="absolute inset-0 z-0 pointer-events-none">
-      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/3"></div>
-      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-zinc-800/40 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-0 right-0 w-[650px] h-[650px] bg-blue-900/25 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[550px] h-[550px] bg-zinc-800/50 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-transparent to-zinc-950/80"></div>
     </div>
 
     <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
@@ -20,7 +20,7 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
       <div class="w-full lg:w-7/12 flex flex-col items-start text-left">
         
         <!-- Status Badge -->
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-xs font-semibold mb-6 backdrop-blur-md">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-neutral-200 text-xs font-semibold mb-6 backdrop-blur-md shadow-inner">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>EST. 1998 &bull; PAN-INDIA INDUSTRIAL LAUNDRY MANUFACTURER</span>
         </div>
@@ -28,23 +28,23 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
         <!-- Main Headline -->
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-5 leading-[1.1] md:leading-[1.08]">
           Commercial &amp; Industrial<br class="hidden sm:block" />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400">Laundry Machinery.</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-neutral-300">Laundry Machinery.</span>
         </h1>
         
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-neutral-400 mb-8 max-w-2xl leading-relaxed">
-          Heavy-duty washing, drying, and garment finishing equipment engineered for 24/7 continuous duty cycles. From <strong class="text-white font-semibold">10 KG to 215 KG</strong> capacity, supported by guaranteed 24-48 hr pan-India on-site service.
+        <p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-2xl leading-relaxed font-normal">
+          Heavy-duty washing, drying, and garment finishing equipment engineered for 24/7 continuous duty cycles. From <strong class="text-white font-bold bg-white/10 px-2 py-0.5 rounded">10 KG to 215 KG</strong> capacity, supported by guaranteed 24-48 hr pan-India on-site service.
         </p>
 
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-8">
-          <a href="/contact" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.15)]">
+          <a href="/contact" class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-zinc-950 bg-white rounded-full hover:bg-neutral-100 transition-all active:scale-95 shadow-[0_0_35px_rgba(255,255,255,0.25)] hover:shadow-[0_0_45px_rgba(255,255,255,0.35)]">
             Request Price Quote
           </a>
-          <a href="/price-list" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-white/10 border border-white/15 rounded-full hover:bg-white/15 transition-all active:scale-95">
-            View Price List &amp; Specs
+          <a href="/price-list" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-bold text-white bg-blue-600/90 border border-blue-500 rounded-full hover:bg-blue-600 transition-all active:scale-95 shadow-md shadow-blue-900/30">
+            View Price List &amp; Specs &rarr;
           </a>
-          <a href="/contact#catalogue" class="inline-flex items-center justify-center gap-1.5 px-6 py-3.5 text-sm font-medium text-neutral-300 hover:text-white transition-colors">
+          <a href="/contact#catalogue" class="inline-flex items-center justify-center gap-1.5 px-5 py-3.5 text-sm font-medium text-neutral-300 hover:text-white transition-colors">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
             Brochure (PDF)
           </a>
@@ -52,21 +52,21 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
 
         <!-- Trust Mini Badges -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10 w-full text-xs text-neutral-400">
-          <div>
-            <span class="block text-white font-bold text-base">25+ Yrs</span>
-            <span class="text-[11px] text-neutral-500">Engineering Trust</span>
+          <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+            <span class="block text-white font-bold text-lg font-mono">25+ Yrs</span>
+            <span class="text-[11px] text-neutral-400">Engineering Trust</span>
           </div>
-          <div>
-            <span class="block text-white font-bold text-base">1,200+</span>
-            <span class="text-[11px] text-neutral-500">Installations</span>
+          <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+            <span class="block text-white font-bold text-lg font-mono">1,200+</span>
+            <span class="text-[11px] text-neutral-400">Installations</span>
           </div>
-          <div>
-            <span class="block text-white font-bold text-base">24-48 Hr</span>
-            <span class="text-[11px] text-neutral-500">Pan-India Service</span>
+          <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+            <span class="block text-white font-bold text-lg font-mono">24-48 Hr</span>
+            <span class="text-[11px] text-neutral-400">Pan-India Service</span>
           </div>
-          <div>
-            <span class="block text-white font-bold text-base">ISO 9001</span>
-            <span class="text-[11px] text-neutral-500">Quality Certified</span>
+          <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+            <span class="block text-white font-bold text-lg font-mono">ISO 9001</span>
+            <span class="text-[11px] text-neutral-400">Quality Certified</span>
           </div>
         </div>
 
@@ -80,48 +80,48 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
     </div>
   </section>
 
-  <!-- QUICK INDUSTRIAL STATS RIBBON (Shaikh Petroleum Standard) -->
-  <section class="w-full bg-white border-b border-neutral-200/80 py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center md:text-left">
+  <!-- ELEVATED TRUST STATS CAPSULE (Breaks the Hero/Body barrier with 3D elevation) -->
+  <section class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-10 mb-12">
+    <div class="bg-white rounded-2xl border border-neutral-300 shadow-[0_10px_35px_-5px_rgba(0,0,0,0.12),0_2px_8px_rgba(0,0,0,0.06)] p-5 sm:p-7">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
         
-        <div class="flex items-center justify-center md:justify-start gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="flex items-center gap-3.5 p-2">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-200 shadow-xs">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
-            <p class="font-bold text-sm text-zinc-950">AISI 304 Stainless Steel</p>
-            <p class="text-xs text-neutral-500">Corrosion-proof drum &amp; chassis</p>
+            <p class="font-extrabold text-sm text-zinc-950">AISI 304 Stainless Steel</p>
+            <p class="text-xs text-neutral-500 mt-0.5">Corrosion-proof drum &amp; chassis</p>
           </div>
         </div>
 
-        <div class="flex items-center justify-center md:justify-start gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <div class="flex items-center gap-3.5 p-2 border-t sm:border-t-0 sm:border-l border-neutral-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-200 shadow-xs">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
           <div>
-            <p class="font-bold text-sm text-zinc-950">Up to 35% Energy Savings</p>
-            <p class="text-xs text-neutral-500">Inverter variable frequency drives</p>
+            <p class="font-extrabold text-sm text-zinc-950">Up to 35% Utility Savings</p>
+            <p class="text-xs text-neutral-500 mt-0.5">Variable frequency drives &amp; auto-rinse</p>
           </div>
         </div>
 
-        <div class="flex items-center justify-center md:justify-start gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-100">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <div class="flex items-center gap-3.5 p-2 border-t lg:border-t-0 lg:border-l border-neutral-200">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200 shadow-xs">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
           </div>
           <div>
-            <p class="font-bold text-sm text-zinc-950">Direct Plant Dispatch</p>
-            <p class="text-xs text-neutral-500">Ex-works GIDC Estate, Gujarat</p>
+            <p class="font-extrabold text-sm text-zinc-950">Direct Plant Dispatch</p>
+            <p class="text-xs text-neutral-500 mt-0.5">GIDC Industrial Estate, Gujarat</p>
           </div>
         </div>
 
-        <div class="flex items-center justify-center md:justify-start gap-3.5">
-          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 border border-purple-100">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div class="flex items-center gap-3.5 p-2 border-t sm:border-t-0 sm:border-l border-neutral-200">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 border border-purple-200 shadow-xs">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
           <div>
-            <p class="font-bold text-sm text-zinc-950">Turnkey Facility Support</p>
-            <p class="text-xs text-neutral-500">CAD layouts &amp; utility planning</p>
+            <p class="font-extrabold text-sm text-zinc-950">Turnkey Sizing &amp; CAD</p>
+            <p class="text-xs text-neutral-500 mt-0.5">Architectural utility drawings</p>
           </div>
         </div>
 
@@ -129,182 +129,188 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
     </div>
   </section>
 
-  <!-- MACHINERY CATEGORIES (Shaikh Petroleum Best Products Model) -->
-  <section class="w-full py-16 md:py-20 bg-neutral-50/60 overflow-hidden border-b border-neutral-200/80">
+  <!-- MACHINERY CATEGORIES (Architectural Cool-Gray Surface + Elevated Highlight Cards) -->
+  <section class="w-full py-12 md:py-20 relative industrial-grid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 pb-6 border-b border-neutral-300">
         <div>
-          <span class="text-xs font-bold font-mono uppercase text-blue-600 tracking-wider">Product Categories</span>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-zinc-950 mt-1">Our Core Machinery Portfolio</h2>
-          <p class="text-neutral-500 text-sm sm:text-base mt-1">Engineered for commercial laundromats, luxury hotels, multi-specialty hospitals, and garment export units.</p>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-blue-100 text-blue-800 text-xs font-bold font-mono uppercase tracking-wider">
+            Engineered Hardware Portfolio
+          </span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-zinc-950 mt-2">
+            Heavy-Duty Machinery Categories
+          </h2>
+          <p class="text-neutral-600 text-sm sm:text-base mt-1 max-w-2xl">
+            High-extraction washers, reversing tumble dryers, automated multi-housing towers, and pass-through barrier systems.
+          </p>
         </div>
-        <a href="/price-list" class="inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700 shrink-0">
+        <a href="/price-list" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-neutral-300 shadow-sm text-xs font-bold text-zinc-950 hover:bg-neutral-50 transition-all shrink-0">
           <span>Compare All 14 Models &amp; Specs</span>
           <span>&rarr;</span>
         </a>
       </div>
 
-      <!-- Categories Grid -->
+      <!-- Categories Grid with Top Colored Accents and Crisp Card Elevation -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- 1. Commercial Washers -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-blue-600 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-100">20 KG to 120 KG</span>
-              <span class="text-xs text-neutral-400 font-mono">GHW SERIES</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-blue-50 text-blue-700 border border-blue-200">20 KG to 120 KG</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">GHW SERIES</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">Commercial Washing Machines</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">Commercial Washing Machines</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               High-extraction programmable washer extractors with up to 350 G-force. Microprocessor control with customizable chemical injection programs.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Heating: Steam / Electric</p>
-              <p>&bull; Extract Speed: Up to 950 RPM</p>
-              <p>&bull; Ideal for: Hotels, Hospitals, Central Plants</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Heating:</strong> Steam / Electric</p>
+              <p>&bull; <strong>Extract Speed:</strong> Up to 950 RPM</p>
+              <p>&bull; <strong>Ideal for:</strong> Hotels, Hospitals, Central Plants</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/machinery/commercial-washing-machines" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/machinery/commercial-washing-machines" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Models
             </a>
-            <a href="/contact?category=washers" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=washers" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
         </div>
 
         <!-- 2. Industrial Dryers -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-amber-500 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-100">15 KG to 100 KG</span>
-              <span class="text-xs text-neutral-400 font-mono">GAD SERIES</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-amber-50 text-amber-700 border border-amber-200">15 KG to 100 KG</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">GAD SERIES</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">Industrial Tumble Dryers</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">Industrial Tumble Dryers</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               Axial &amp; radial airflow technology ensuring rapid moisture extraction with minimum fabric abrasion. Bi-directional reversing cylinder prevents balling.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Heating: Steam / Piped Gas / Electric</p>
-              <p>&bull; Drum: Stainless Steel AISI 304</p>
-              <p>&bull; Ideal for: High-turnover Linen &amp; Uniforms</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Heating:</strong> Steam / Piped Gas / Electric</p>
+              <p>&bull; <strong>Drum:</strong> Stainless Steel AISI 304</p>
+              <p>&bull; <strong>Ideal for:</strong> High-turnover Linen &amp; Uniforms</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/machinery/commercial-laundry-dryers" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/machinery/commercial-laundry-dryers" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Models
             </a>
-            <a href="/contact?category=dryers" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=dryers" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
         </div>
 
         <!-- 3. LG Stacker Towers -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-indigo-600 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">10 KG &bull; 15 KG</span>
-              <span class="text-xs text-neutral-400 font-mono">LG COMMERCIAL</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">10 KG &bull; 15 KG</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">LG COMMERCIAL</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">LG Commercial Stackers</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">LG Commercial Stackers</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               Vertical stacked washer + dryer towers designed for laundromats, boutique hotels, and student hostels. Inverter DirectDrive for quiet operation.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Footprint: Ultra-compact (half floor space)</p>
-              <p>&bull; Payment: UPI / Card / Token compatible</p>
-              <p>&bull; Ideal for: Urban Laundromats &amp; Resorts</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Footprint:</strong> Half floor space footprint</p>
+              <p>&bull; <strong>Payment:</strong> UPI / Card / Token compatible</p>
+              <p>&bull; <strong>Ideal for:</strong> Urban Laundromats &amp; Resorts</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/machinery/lg-commercial-stackers" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/machinery/lg-commercial-stackers" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Models
             </a>
-            <a href="/contact?category=stackers" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=stackers" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
         </div>
 
         <!-- 4. Hydra Barrier Washers -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-emerald-600 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">60 KG to 215 KG</span>
-              <span class="text-xs text-neutral-400 font-mono">HYDRA BARRIER</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">60 KG to 215 KG</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">HYDRA BARRIER</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">Hydra Barrier Washers</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">Hydra Barrier Washers</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               Dual-door pass-through barrier washers built for cleanrooms, sterile hospital linen, and pharmaceutical manufacturing to prevent cross-contamination.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Design: Wall pass-through isolation</p>
-              <p>&bull; Standard: Cleanroom / NABH / WHO Hygiene</p>
-              <p>&bull; Ideal for: Large Hospitals &amp; Pharma</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Design:</strong> Wall pass-through isolation</p>
+              <p>&bull; <strong>Standard:</strong> Cleanroom / NABH / WHO Hygiene</p>
+              <p>&bull; <strong>Ideal for:</strong> Large Hospitals &amp; Pharma</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/machinery/hydra-industrial-laundry-machinery" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/machinery/hydra-industrial-laundry-machinery" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Models
             </a>
-            <a href="/contact?category=hydra" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=hydra" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
         </div>
 
         <!-- 5. Steam Press Model Alpha -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-purple-600 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-purple-50 text-purple-700 border border-purple-100">120 Pieces / Hr</span>
-              <span class="text-xs text-neutral-400 font-mono">FINISHING RANGE</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-purple-50 text-purple-700 border border-purple-200">120 Pieces / Hr</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">FINISHING RANGE</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">Steam Press Model Alpha</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">Steam Press Model Alpha</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               Pneumatic steam pressing machine with vacuum buck and foot pedal control. Delivers crisp, dry cleaner-grade creases with zero fabric shine.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Head: Cast Aluminum with Teflon Shoe</p>
-              <p>&bull; Vacuum: High-power built-in suction</p>
-              <p>&bull; Ideal for: Suits, Trousers &amp; Formal Uniforms</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Head:</strong> Cast Aluminum with Teflon Shoe</p>
+              <p>&bull; <strong>Vacuum:</strong> High-power built-in suction</p>
+              <p>&bull; <strong>Ideal for:</strong> Suits, Trousers &amp; Uniforms</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/steam-press-machines/model-alpha" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/steam-press-machines/model-alpha" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Specs
             </a>
-            <a href="/contact?category=model-alpha" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=model-alpha" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
         </div>
 
         <!-- 6. Flatwork Ironers & Boilers -->
-        <div class="bg-white rounded-2xl border border-neutral-200/80 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl border-t-4 border-t-zinc-800 border-x border-b border-neutral-200/90 p-6 flex flex-col justify-between shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_36px_-6px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-neutral-100 text-neutral-800 border border-neutral-200">1.8 M to 3.2 M Roll</span>
-              <span class="text-xs text-neutral-400 font-mono">FLATWORK</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-neutral-100 text-neutral-800 border border-neutral-200">1.8 M to 3.2 M Roll</span>
+              <span class="text-xs text-neutral-400 font-mono font-bold">FLATWORK</span>
             </div>
-            <h3 class="text-xl font-bold text-zinc-950 mb-2">Flatwork Bed Sheet Ironers</h3>
-            <p class="text-neutral-500 text-xs sm:text-sm leading-relaxed mb-6">
+            <h3 class="text-xl font-black text-zinc-950 mb-2">Flatwork Bed Sheet Ironers</h3>
+            <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5">
               Industrial heated roller ironers for continuous bed sheets, duvet covers, and tablecloth processing at speeds up to 12 meters per minute.
             </p>
-            <div class="space-y-1.5 text-xs text-neutral-600 mb-6 bg-neutral-50 p-3.5 rounded-xl border border-neutral-200/60 font-mono">
-              <p>&bull; Rollers: Single, Double &amp; Triple Roll</p>
-              <p>&bull; Heating: Steam / Electric / Thermic Fluid</p>
-              <p>&bull; Ideal for: Star Hotels &amp; Commercial Laundries</p>
+            <div class="space-y-1.5 text-xs text-neutral-700 mb-6 bg-neutral-100/80 p-3.5 rounded-xl border border-neutral-200 font-mono">
+              <p>&bull; <strong>Rollers:</strong> Single, Double &amp; Triple Roll</p>
+              <p>&bull; <strong>Heating:</strong> Steam / Electric / Thermic Fluid</p>
+              <p>&bull; <strong>Ideal for:</strong> Star Hotels &amp; Commercial Laundries</p>
             </div>
           </div>
           <div class="flex items-center gap-2 pt-4 border-t border-neutral-100">
-            <a href="/garment-finishing" class="flex-1 py-2 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors">
+            <a href="/garment-finishing" class="flex-1 py-2.5 text-center rounded-xl bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs">
               View Finishing
             </a>
-            <a href="/contact?category=ironers" class="flex-1 py-2 text-center rounded-xl border border-neutral-200 text-zinc-900 text-xs font-semibold hover:bg-neutral-50 transition-colors">
+            <a href="/contact?category=ironers" class="flex-1 py-2.5 text-center rounded-xl border border-neutral-300 text-zinc-950 text-xs font-bold hover:bg-neutral-50 transition-colors">
               Get Quote
             </a>
           </div>
@@ -315,143 +321,166 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
     </div>
   </section>
 
-  <!-- SPECIFICATION & PRICE LIST PREVIEW TABLE (Shaikh Petroleum Model) -->
-  <section class="w-full py-16 bg-white border-b border-neutral-200/80">
+  <!-- SPECIFICATION & PRICE LIST PREVIEW TABLE (Framed High-Contrast Engineering Terminal) -->
+  <section class="w-full py-16 bg-[#E9EBEF] border-y border-neutral-300 dot-grid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <span class="text-xs font-bold font-mono uppercase text-emerald-600 tracking-wider">Quick Specification Index</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-950 mt-1">Industrial Machine Specifications &amp; Pricing Slabs</h2>
-          <p class="text-neutral-500 text-sm mt-1">Ex-works baseline rates for immediate procurement planning. Complete pricing schedule on the dedicated page.</p>
+          <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-extrabold font-mono uppercase tracking-wider">
+            Procurement Schedule FY 2026-27
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-zinc-950 mt-2">
+            Machine Specifications &amp; Pricing Slabs
+          </h2>
+          <p class="text-neutral-600 text-sm mt-1">
+            Ex-works factory baseline rates. For complete engineering parameters, open the comprehensive price list.
+          </p>
         </div>
-        <a href="/price-list" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-all shrink-0">
-          View Complete 14-Model Table &rarr;
+        <a href="/price-list" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-zinc-950 text-white text-xs font-bold hover:bg-neutral-800 transition-all shadow-md shrink-0">
+          View Full 14-Model Schedule &rarr;
         </a>
       </div>
 
-      <!-- Preview Table -->
-      <div class="bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-xs">
+      <!-- Preview Table Container -->
+      <div class="bg-white rounded-2xl border-2 border-neutral-300/80 shadow-[0_12px_30px_-8px_rgba(0,0,0,0.08)] overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs border-collapse min-w-[700px]">
-            <thead class="bg-neutral-50 text-neutral-500 font-mono uppercase text-[10px] border-b border-neutral-200/80">
+            <thead class="bg-zinc-950 text-neutral-300 font-mono uppercase text-[10px] border-b border-zinc-800">
               <tr>
-                <th class="py-3.5 px-4 font-bold">Model Name</th>
-                <th class="py-3.5 px-4 font-bold">Capacity</th>
-                <th class="py-3.5 px-4 font-bold">Drum Spec</th>
-                <th class="py-3.5 px-4 font-bold">Heating</th>
-                <th class="py-3.5 px-4 font-bold text-right">Base Price (INR)*</th>
-                <th class="py-3.5 px-4 text-center font-bold">Quick Action</th>
+                <th class="py-4 px-4 font-bold text-white">Model Name</th>
+                <th class="py-4 px-4 font-bold text-white">Capacity</th>
+                <th class="py-4 px-4 font-bold text-white">Drum Spec</th>
+                <th class="py-4 px-4 font-bold text-white">Heating</th>
+                <th class="py-4 px-4 font-bold text-white text-right">Base Price (INR)*</th>
+                <th class="py-4 px-4 text-center font-bold text-white">Action</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-neutral-200/60 font-sans">
-              <tr class="hover:bg-neutral-50/60 transition-colors">
-                <td class="py-3 px-4 font-bold text-zinc-950">Gartech GHW-20 Washer</td>
-                <td class="py-3 px-4 font-semibold text-blue-700">20 KG</td>
-                <td class="py-3 px-4 text-neutral-600">350 G-Force &bull; 950 RPM</td>
-                <td class="py-3 px-4 text-neutral-600">Electric / Steam</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-zinc-950">₹ 2,85,000*</td>
-                <td class="py-3 px-4 text-center"><a href="/contact?model=GHW-20" class="text-blue-600 hover:underline font-bold">Get Quote</a></td>
+            <tbody class="divide-y divide-neutral-200 font-sans">
+              <tr class="hover:bg-blue-50/50 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-zinc-950">Gartech GHW-20 Washer</td>
+                <td class="py-3.5 px-4 font-bold text-blue-700">20 KG</td>
+                <td class="py-3.5 px-4 text-neutral-600">350 G-Force &bull; 950 RPM</td>
+                <td class="py-3.5 px-4 text-neutral-600">Electric / Steam</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950"><span class="bg-neutral-100 px-2 py-1 rounded">₹ 2,85,000*</span></td>
+                <td class="py-3.5 px-4 text-center"><a href="/contact?model=GHW-20" class="text-blue-600 hover:text-blue-800 font-bold underline">Get Quote</a></td>
               </tr>
-              <tr class="hover:bg-neutral-50/60 transition-colors">
-                <td class="py-3 px-4 font-bold text-zinc-950">Gartech GHW-35 Washer</td>
-                <td class="py-3 px-4 font-semibold text-blue-700">35 KG</td>
-                <td class="py-3 px-4 text-neutral-600">350 G-Force &bull; 900 RPM</td>
-                <td class="py-3 px-4 text-neutral-600">Steam / Electric</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-zinc-950">₹ 3,95,000*</td>
-                <td class="py-3 px-4 text-center"><a href="/contact?model=GHW-35" class="text-blue-600 hover:underline font-bold">Get Quote</a></td>
+              <tr class="bg-neutral-50/50 hover:bg-blue-50/50 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-zinc-950">Gartech GHW-35 Washer</td>
+                <td class="py-3.5 px-4 font-bold text-blue-700">35 KG</td>
+                <td class="py-3.5 px-4 text-neutral-600">350 G-Force &bull; 900 RPM</td>
+                <td class="py-3.5 px-4 text-neutral-600">Steam / Electric</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950"><span class="bg-neutral-100 px-2 py-1 rounded">₹ 3,95,000*</span></td>
+                <td class="py-3.5 px-4 text-center"><a href="/contact?model=GHW-35" class="text-blue-600 hover:text-blue-800 font-bold underline">Get Quote</a></td>
               </tr>
-              <tr class="hover:bg-neutral-50/60 transition-colors">
-                <td class="py-3 px-4 font-bold text-zinc-950">Gartech GAD-50 Dryer</td>
-                <td class="py-3 px-4 font-semibold text-amber-700">50 KG</td>
-                <td class="py-3 px-4 text-neutral-600">1,020 L Reversing Drum</td>
-                <td class="py-3 px-4 text-neutral-600">Steam / Gas</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-zinc-950">₹ 3,85,000*</td>
-                <td class="py-3 px-4 text-center"><a href="/contact?model=GAD-50" class="text-blue-600 hover:underline font-bold">Get Quote</a></td>
+              <tr class="hover:bg-blue-50/50 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-zinc-950">Gartech GAD-50 Dryer</td>
+                <td class="py-3.5 px-4 font-bold text-amber-700">50 KG</td>
+                <td class="py-3.5 px-4 text-neutral-600">1,020 L Reversing Drum</td>
+                <td class="py-3.5 px-4 text-neutral-600">Steam / Gas</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950"><span class="bg-neutral-100 px-2 py-1 rounded">₹ 3,85,000*</span></td>
+                <td class="py-3.5 px-4 text-center"><a href="/contact?model=GAD-50" class="text-blue-600 hover:text-blue-800 font-bold underline">Get Quote</a></td>
               </tr>
-              <tr class="hover:bg-neutral-50/60 transition-colors">
-                <td class="py-3 px-4 font-bold text-zinc-950">LG Titan-C Pro Stacker</td>
-                <td class="py-3 px-4 font-semibold text-indigo-700">10 + 10 KG</td>
-                <td class="py-3 px-4 text-neutral-600">DirectDrive 1,150 RPM</td>
-                <td class="py-3 px-4 text-neutral-600">Electric 230V</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-zinc-950">₹ 3,45,000*</td>
-                <td class="py-3 px-4 text-center"><a href="/contact?model=LG-Titan-10" class="text-blue-600 hover:underline font-bold">Get Quote</a></td>
+              <tr class="bg-neutral-50/50 hover:bg-blue-50/50 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-zinc-950">LG Titan-C Pro Stacker</td>
+                <td class="py-3.5 px-4 font-bold text-indigo-700">10 + 10 KG</td>
+                <td class="py-3.5 px-4 text-neutral-600">DirectDrive 1,150 RPM</td>
+                <td class="py-3.5 px-4 text-neutral-600">Electric 230V</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950"><span class="bg-neutral-100 px-2 py-1 rounded">₹ 3,45,000*</span></td>
+                <td class="py-3.5 px-4 text-center"><a href="/contact?model=LG-Titan-10" class="text-blue-600 hover:text-blue-800 font-bold underline">Get Quote</a></td>
               </tr>
-              <tr class="hover:bg-neutral-50/60 transition-colors">
-                <td class="py-3 px-4 font-bold text-zinc-950">Hydra CleanBarrier HCB-60</td>
-                <td class="py-3 px-4 font-semibold text-emerald-700">60 KG</td>
-                <td class="py-3 px-4 text-neutral-600">Dual-Door Cleanroom Wall</td>
-                <td class="py-3 px-4 text-neutral-600">Steam Sanitary</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-zinc-950">₹ 9,50,000*</td>
-                <td class="py-3 px-4 text-center"><a href="/contact?model=HCB-60" class="text-blue-600 hover:underline font-bold">Get Quote</a></td>
+              <tr class="hover:bg-blue-50/50 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-zinc-950">Hydra CleanBarrier HCB-60</td>
+                <td class="py-3.5 px-4 font-bold text-emerald-700">60 KG</td>
+                <td class="py-3.5 px-4 text-neutral-600">Dual-Door Cleanroom Wall</td>
+                <td class="py-3.5 px-4 text-neutral-600">Steam Sanitary</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-zinc-950"><span class="bg-neutral-100 px-2 py-1 rounded">₹ 9,50,000*</span></td>
+                <td class="py-3.5 px-4 text-center"><a href="/contact?model=HCB-60" class="text-blue-600 hover:text-blue-800 font-bold underline">Get Quote</a></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="p-3.5 bg-neutral-50 border-t border-neutral-200/80 text-[11px] text-neutral-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>*Billed under HSN 8450 / 8451 with GST @ 18% and full Input Tax Credit (ITC) eligibility.</span>
-          <a href="/price-list" class="font-bold text-blue-600 hover:underline">See full technical breakdown &rarr;</a>
+        <div class="p-4 bg-neutral-100 border-t border-neutral-200 text-xs text-neutral-600 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span>*Billed under HSN 8450 / 8451 with GST @ 18% &bull; Full Input Tax Credit (ITC) documented.</span>
+          <a href="/price-list" class="font-bold text-blue-700 hover:underline">Open Complete 14-Model Spec Matrix &rarr;</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- INDUSTRIES WE SERVE (Mobile App Horizontal Swipe Style - Preserved from LaundryMall) -->
-  <section class="w-full py-16 md:py-20 bg-neutral-50/50 overflow-hidden border-b border-neutral-200/80">
+  <!-- CONTRAST SECTION: INDUSTRIES WE SERVE (Deep Industrial Navy/Carbon - Breaks White Paper Look) -->
+  <section class="w-full py-16 md:py-24 bg-zinc-950 text-white border-b border-zinc-900 industrial-grid-dark relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-8">
-        <span class="text-xs font-bold font-mono uppercase text-blue-600 tracking-wider">Target Sectors</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-950 mt-1">Industries Powered by Gartech</h2>
-        <p class="text-neutral-500 text-sm mt-1">Custom-engineered laundry setups tailored to sector-specific fabric care and volume demands.</p>
+      
+      <div class="mb-10 text-left">
+        <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-400 text-xs font-bold font-mono uppercase tracking-wider">
+          Target Sectors
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white mt-2">
+          Specialized Turnkey Solutions by Industry
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base mt-1 max-w-2xl">
+          Sector-engineered laundry workflows formulated to meet exact turnaround deadlines, chemical sanitation, and heavy fabric weights.
+        </p>
       </div>
 
-      <!-- Horizontal Swipeable List -->
-      <div class="flex items-center gap-4 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory">
+      <!-- Horizontal Swipeable List in Deep Contrast Theme -->
+      <div class="flex items-center gap-5 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory">
         
-        <div class="shrink-0 w-64 snap-start p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m-4 0h4"/></svg>
+        <div class="shrink-0 w-72 snap-start p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl hover:border-blue-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold mb-4 border border-blue-500/20">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m-4 0h4"/></svg>
           </div>
-          <h4 class="font-bold text-zinc-950 text-base mb-1">Hotels &amp; Resorts</h4>
-          <p class="text-neutral-500 text-xs leading-relaxed mb-3">Heavy bed linen, towels, and guest garments with rapid 2-hour room turnaround.</p>
-          <a href="/industries" class="text-xs font-bold text-blue-600 hover:underline">Explore Solutions &rarr;</a>
+          <h4 class="font-bold text-white text-base mb-1.5">Hotels &amp; Resorts</h4>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">Heavy bed linen, towels, and guest garments with rapid 2-hour room turnaround.</p>
+          <a href="/industries" class="text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1">
+            Explore Hotel Solutions &rarr;
+          </a>
         </div>
 
-        <div class="shrink-0 w-64 snap-start p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+        <div class="shrink-0 w-72 snap-start p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl hover:border-emerald-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-4 border border-emerald-500/20">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
           </div>
-          <h4 class="font-bold text-zinc-950 text-base mb-1">Hospitals &amp; Healthcare</h4>
-          <p class="text-neutral-500 text-xs leading-relaxed mb-3">Barrier isolation washers ensuring strict bio-hazard containment &amp; thermal disinfection.</p>
-          <a href="/industries" class="text-xs font-bold text-emerald-600 hover:underline">Explore Solutions &rarr;</a>
+          <h4 class="font-bold text-white text-base mb-1.5">Hospitals &amp; Healthcare</h4>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">Barrier isolation washers ensuring strict bio-hazard containment &amp; thermal disinfection.</p>
+          <a href="/industries" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
+            Explore Healthcare Solutions &rarr;
+          </a>
         </div>
 
-        <div class="shrink-0 w-64 snap-start p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 2v20M2 12h20"/></svg>
+        <div class="shrink-0 w-72 snap-start p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl hover:border-amber-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4 border border-amber-500/20">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 2v20M2 12h20"/></svg>
           </div>
-          <h4 class="font-bold text-zinc-950 text-base mb-1">Commercial Laundromats</h4>
-          <p class="text-neutral-500 text-xs leading-relaxed mb-3">High-speed coin/UPI automated stacker units built for high ROI and minimal floor area.</p>
-          <a href="/industries" class="text-xs font-bold text-amber-600 hover:underline">Explore Solutions &rarr;</a>
+          <h4 class="font-bold text-white text-base mb-1.5">Commercial Laundromats</h4>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">High-speed coin/UPI automated stacker units built for high ROI and minimal floor area.</p>
+          <a href="/industries" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+            Explore Laundromat Solutions &rarr;
+          </a>
         </div>
 
-        <div class="shrink-0 w-64 snap-start p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/></svg>
+        <div class="shrink-0 w-72 snap-start p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl hover:border-purple-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold mb-4 border border-purple-500/20">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/></svg>
           </div>
-          <h4 class="font-bold text-zinc-950 text-base mb-1">Garment Exporters</h4>
-          <p class="text-neutral-500 text-xs leading-relaxed mb-3">Industrial garment washing, denim finishing, enzyme baths, and high-volume steam pressing.</p>
-          <a href="/industries" class="text-xs font-bold text-purple-600 hover:underline">Explore Solutions &rarr;</a>
+          <h4 class="font-bold text-white text-base mb-1.5">Garment Exporters</h4>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">Industrial garment washing, denim finishing, enzyme baths, and high-volume steam pressing.</p>
+          <a href="/industries" class="text-xs font-bold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+            Explore Exporter Solutions &rarr;
+          </a>
         </div>
 
-        <div class="shrink-0 w-64 snap-start p-5 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold mb-3">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <div class="shrink-0 w-72 snap-start p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-xl hover:border-indigo-500/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold mb-4 border border-indigo-500/20">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
-          <h4 class="font-bold text-zinc-950 text-base mb-1">Universities &amp; Hostels</h4>
-          <p class="text-neutral-500 text-xs leading-relaxed mb-3">Durable self-service laundry plants with heavy-duty token and contactless mobile app controls.</p>
-          <a href="/industries" class="text-xs font-bold text-indigo-600 hover:underline">Explore Solutions &rarr;</a>
+          <h4 class="font-bold text-white text-base mb-1.5">Hostels &amp; Institutions</h4>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">Durable self-service laundry plants with heavy-duty token and contactless mobile app controls.</p>
+          <a href="/industries" class="text-xs font-bold text-indigo-400 hover:text-indigo-300 flex items-center gap-1">
+            Explore Institutional Solutions &rarr;
+          </a>
         </div>
 
       </div>
@@ -459,69 +488,73 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
     </div>
   </section>
 
-  <!-- WHY CHOOSE GARTECH (Shaikh Petroleum 6 Pillars Model) -->
-  <section class="w-full py-16 md:py-24 bg-white border-b border-neutral-200/80">
+  <!-- WHY CHOOSE GARTECH (Structured Architectural Grid with Elevated Number Badges) -->
+  <section class="w-full py-16 md:py-24 bg-[#F0F2F5] border-b border-neutral-300 industrial-grid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-3xl mb-12">
-        <span class="text-xs font-bold font-mono uppercase text-blue-600 tracking-wider">Industrial Excellence</span>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-zinc-950 mt-1">Why Leading Indian Enterprises Choose Gartech</h2>
-        <p class="text-neutral-500 text-sm sm:text-base mt-2">
-          Modeled around long-term equipment durability, immediate spares fulfillment, and zero machine downtime.
+        <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-800 text-xs font-bold font-mono uppercase tracking-wider">
+          The Engineering Benchmark
+        </span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-zinc-950 mt-2">
+          Why Leading Indian Enterprises Choose Gartech
+        </h2>
+        <p class="text-neutral-600 text-sm sm:text-base mt-2">
+          Engineered for continuous heavy duty, immediate spares fulfillment, and zero machine downtime.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Pillar 1 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">01</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">Legacy of Trust Since 1998</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">01</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">Legacy of Trust Since 1998</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             Over 25 years of specialized experience manufacturing commercial laundry equipment tailored precisely to Indian water quality, voltage fluctuations, and continuous work shifts.
           </p>
         </div>
 
         <!-- Pillar 2 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">02</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">AISI 304 Heavy-Duty Build</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">02</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">AISI 304 Heavy-Duty Build</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             Every wash cylinder, shaft, and casing is fabricated with certified grade 304 stainless steel, heavy spherical roller bearings, and multi-lip Viton seals for lasting reliability.
           </p>
         </div>
 
         <!-- Pillar 3 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">03</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">Pan-India Logistics &amp; Service</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">03</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">Pan-India Logistics &amp; Service</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             Strategic service depots across Gujarat, Maharashtra, Delhi NCR, Karnataka, Tamil Nadu, and Telangana with guaranteed 24 to 48-hour on-site engineer dispatch.
           </p>
         </div>
 
         <!-- Pillar 4 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">04</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">10,000+ Ready Spares in Stock</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">04</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">10,000+ Ready Spares in Stock</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             We maintain an exhaustive warehouse of genuine inverters, motors, heating elements, drain valves, and door gaskets for same-day dispatch to prevent plant shutdowns.
           </p>
         </div>
 
         <!-- Pillar 5 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">05</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">Turnkey CAD Utility Planning</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">05</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">Turnkey CAD Utility Planning</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             From civil foundation drawings to steam pipe sizing, compressed air routing, electrical MCC panels, and drainage trenches, our engineers provide complete CAD layouts.
           </p>
         </div>
 
         <!-- Pillar 6 -->
-        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-sm mb-4">06</div>
-          <h3 class="font-bold text-lg text-zinc-950 mb-2">ISO 9001:2015 Quality Tested</h3>
+        <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold font-mono text-sm mb-4 shadow-sm">06</div>
+          <h3 class="font-extrabold text-lg text-zinc-950 mb-2">ISO 9001:2015 Quality Tested</h3>
           <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
             Every machine undergoes a rigorous 72-hour continuous test cycle at our Gujarat plant before dispatch, ensuring vibration-free balance and electrical compliance.
           </p>
@@ -532,57 +565,63 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
     </div>
   </section>
 
-  <!-- FACTORY & OFFICE LOCATIONS (Shaikh Petroleum Model) -->
-  <section class="w-full py-16 bg-neutral-50/70 border-b border-neutral-200/80">
+  <!-- FACTORY & OFFICE LOCATIONS (Solid Clean Industrial Hubs) -->
+  <section class="w-full py-16 bg-[#E6E9EE] border-b border-neutral-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-10 text-center max-w-2xl mx-auto">
-        <span class="text-xs font-bold font-mono uppercase text-blue-600 tracking-wider">Manufacturing &amp; Presence</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-950 mt-1">Our Works &amp; Regional Network</h2>
-        <p class="text-neutral-500 text-sm mt-1">Manufacturing plant located in Gujarat's premier industrial corridor with dispatch access across India.</p>
+        <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-800 text-xs font-bold font-mono uppercase tracking-wider">
+          Manufacturing Infrastructure
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-zinc-950 mt-2">
+          Our Works &amp; Regional Presence
+        </h2>
+        <p class="text-neutral-600 text-sm mt-1">
+          Registered plant in Gujarat's premier industrial corridor with dispatch access across India.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Factory Plant -->
-        <div class="p-6 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-mono text-[10px] uppercase font-bold mb-3">Main Plant &amp; Works</span>
-          <h4 class="font-bold text-base text-zinc-950 mb-1">Gujarat Manufacturing Facility</h4>
-          <p class="text-xs text-neutral-500 leading-relaxed mb-4">
+        <div class="p-7 rounded-2xl bg-white border-2 border-neutral-200/90 shadow-md">
+          <span class="inline-block px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-800 font-mono text-[11px] uppercase font-bold mb-3 border border-blue-200">Main Plant &amp; Works</span>
+          <h4 class="font-extrabold text-base text-zinc-950 mb-1">Gujarat Manufacturing Facility</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
             Plot No. 48, GIDC Industrial Estate, Phase II, Ahmedabad / Ankleshwar Corridor, Gujarat – 382445, India
           </p>
-          <div class="text-xs text-neutral-600 font-mono space-y-1">
-            <p>&bull; Plant Area: 25,000+ sq. ft.</p>
-            <p>&bull; Testing: 72-Hr Continuous Rig</p>
-            <p>&bull; Dispatch: Direct Container &amp; Truck Loading</p>
+          <div class="text-xs text-neutral-600 font-mono space-y-1.5 pt-3 border-t border-neutral-200">
+            <p>&bull; <strong>Facility:</strong> 25,000+ sq. ft. Plant Area</p>
+            <p>&bull; <strong>Testing:</strong> 72-Hr Continuous Rig</p>
+            <p>&bull; <strong>Loading:</strong> Container Stuffing Dock</p>
           </div>
         </div>
 
         <!-- Corporate & Sales -->
-        <div class="p-6 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-mono text-[10px] uppercase font-bold mb-3">Direct Inquiries</span>
-          <h4 class="font-bold text-base text-zinc-950 mb-1">Sales &amp; Quotation Office</h4>
-          <p class="text-xs text-neutral-500 leading-relaxed mb-4">
+        <div class="p-7 rounded-2xl bg-white border-2 border-neutral-200/90 shadow-md">
+          <span class="inline-block px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-mono text-[11px] uppercase font-bold mb-3 border border-emerald-200">Direct Inquiries</span>
+          <h4 class="font-extrabold text-base text-zinc-950 mb-1">Sales &amp; Quotation Office</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
             Direct technical consulting with senior laundry equipment engineers for sizing and project cost formulation.
           </p>
-          <div class="text-xs text-neutral-600 font-mono space-y-1">
-            <p>&bull; Phone: +91 98980 29292</p>
-            <p>&bull; Mobile: +91 98989 70097</p>
-            <p>&bull; Email: sales@gartechglobal.com</p>
+          <div class="text-xs text-neutral-600 font-mono space-y-1.5 pt-3 border-t border-neutral-200">
+            <p>&bull; <strong>Hotline:</strong> +91 98980 29292</p>
+            <p>&bull; <strong>Mobile:</strong> +91 98989 70097</p>
+            <p>&bull; <strong>Email:</strong> sales@gartechglobal.com</p>
           </div>
         </div>
 
         <!-- Regional Logistics -->
-        <div class="p-6 rounded-2xl bg-white border border-neutral-200/80 shadow-xs">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 font-mono text-[10px] uppercase font-bold mb-3">Service Network</span>
-          <h4 class="font-bold text-base text-zinc-950 mb-1">Pan-India Support Depots</h4>
-          <p class="text-xs text-neutral-500 leading-relaxed mb-4">
-            Regional service hubs housing genuine spare parts and mobile technician squads for preventive maintenance and repairs.
+        <div class="p-7 rounded-2xl bg-white border-2 border-neutral-200/90 shadow-md">
+          <span class="inline-block px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-800 font-mono text-[11px] uppercase font-bold mb-3 border border-amber-200">Service Network</span>
+          <h4 class="font-extrabold text-base text-zinc-950 mb-1">Pan-India Support Depots</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Regional service hubs housing genuine spare parts and mobile technician squads for preventive maintenance.
           </p>
-          <div class="text-xs text-neutral-600 font-mono space-y-1">
-            <p>&bull; North: Delhi NCR / Jaipur</p>
-            <p>&bull; West: Mumbai / Pune / Ahmedabad</p>
-            <p>&bull; South: Bengaluru / Hyderabad / Chennai</p>
+          <div class="text-xs text-neutral-600 font-mono space-y-1.5 pt-3 border-t border-neutral-200">
+            <p>&bull; <strong>North:</strong> Delhi NCR / Jaipur</p>
+            <p>&bull; <strong>West:</strong> Mumbai / Pune / Ahmedabad</p>
+            <p>&bull; <strong>South:</strong> Bengaluru / Hyderabad / Chennai</p>
           </div>
         </div>
 
@@ -592,22 +631,23 @@ import InteractiveDrum3D from '../components/InteractiveDrum3D.astro';
   </section>
 
   <!-- BOTTOM CALL TO ACTION -->
-  <section class="w-full bg-zinc-950 py-16 md:py-20 px-4 sm:px-6 lg:px-8 text-center text-white">
+  <section class="w-full bg-zinc-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8 text-center text-white industrial-grid-dark relative">
     <div class="max-w-3xl mx-auto">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-xs font-semibold mb-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-neutral-200 text-xs font-semibold mb-5 backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         Ready for Immediate Commissioning
       </div>
-      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-4">
+      <h2 class="text-2xl sm:text-4xl font-black tracking-tight mb-4">
         Build a High-Efficiency Commercial Laundry Operation
       </h2>
       <p class="text-neutral-400 text-sm sm:text-base mb-8 leading-relaxed">
         Send us your estimated daily linen volume (KG/day) and utility availability (Steam vs Electric). Our engineering team will formulate a full machine schedule and turnkey quotation within 24 hours.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="/contact" class="w-full sm:w-auto px-8 py-3.5 bg-white text-zinc-950 font-bold text-sm rounded-full hover:bg-neutral-100 transition-all shadow-lg shadow-white/10">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+        <a href="/contact" class="w-full sm:w-auto px-8 py-3.5 bg-white text-zinc-950 font-extrabold text-sm rounded-full hover:bg-neutral-100 transition-all shadow-xl shadow-white/10 active:scale-95">
           Request Instant Quotation
         </a>
-        <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20please%20send%20me%20your%20product%20catalogue%20and%20quotation." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 bg-emerald-600 text-white font-bold text-sm rounded-full hover:bg-emerald-500 transition-all">
+        <a href="https://wa.me/919898029292?text=Hello%20Gartech%20Global,%20please%20send%20me%20your%20product%20catalogue%20and%20quotation." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 bg-emerald-600 text-white font-extrabold text-sm rounded-full hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-950/20 active:scale-95">
           Chat on WhatsApp &rarr;
         </a>
       </div>
