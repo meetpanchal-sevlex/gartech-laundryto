@@ -155,10 +155,56 @@ const { title, description = "Gartech Global - India's trusted manufacturer & su
               <span class="px-1.5 py-0.2 rounded-full bg-blue-100 text-blue-700 text-[10px] uppercase font-bold tracking-wider">Specs</span>
             </a>
 
-            <a href="/industries" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Industries</a>
-            <a href="/setup" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Setup</a>
-            <a href="/why-us" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Why Us</a>
-            <a href="/contact" class="px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all">Contact</a>
+            <!-- Single Combined Section for Industries, Setup, Why Us & Contact -->
+            <div class="relative group">
+              <button class="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-neutral-100 hover:text-zinc-950 transition-all whitespace-nowrap">
+                <span>Company &amp; Solutions</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="absolute top-full right-0 xl:left-0 mt-2 w-80 bg-white rounded-2xl shadow-[0_12px_40px_-8px_rgba(0,0,0,0.15)] border border-neutral-200/80 p-2.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50">
+                
+                <a href="/industries" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center shrink-0 border border-blue-100">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m-4 0h4"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-zinc-950 text-xs">Industries We Serve</p>
+                    <p class="text-neutral-500 text-[11px]">Hotels, Hospitals, Laundromats, Garments</p>
+                  </div>
+                </a>
+
+                <a href="/setup" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-8 h-8 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center shrink-0 border border-emerald-100">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-zinc-950 text-xs">Turnkey Laundry Setup</p>
+                    <p class="text-neutral-500 text-[11px]">Facility Planning, Sizing &amp; CAD Layouts</p>
+                  </div>
+                </a>
+
+                <a href="/why-us" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-8 h-8 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center shrink-0 border border-purple-100">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-zinc-950 text-xs">Why Choose Gartech</p>
+                    <p class="text-neutral-500 text-[11px]">25+ Yrs Legacy, 10,000+ Ready Spares</p>
+                  </div>
+                </a>
+
+                <a href="/contact" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-neutral-50 transition-colors">
+                  <div class="w-8 h-8 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center shrink-0 border border-amber-100">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-zinc-950 text-xs">Contact &amp; Works</p>
+                    <p class="text-neutral-500 text-[11px]">Gujarat Plant, Depots &amp; Hotline</p>
+                  </div>
+                </a>
+
+              </div>
+            </div>
           </nav>
 
           <!-- Right Action CTAs -->
